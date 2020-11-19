@@ -1,7 +1,7 @@
 <!--me.wxml-->
 
 <!--底栏-->
-<van-tabbar
+<!-- <van-tabbar
   active="{{ active }}"
   active-color="#AD974A"
   inactive-color="#000"
@@ -10,9 +10,7 @@
   <van-tabbar-item icon="home-o">首页</van-tabbar-item>
   <van-tabbar-item icon="friends-o">广场</van-tabbar-item>
   <van-tabbar-item icon="https://b.yzcdn.cn/vant/icon-demo-1126.png">我</van-tabbar-item>
-</van-tabbar>
-
-
+</van-tabbar> -->
 
 <view class="view_contain">
 
@@ -20,12 +18,12 @@
     <view class="userinfo">
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
       <block wx:else>
-        <div>       
+        <div>
           <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
           <text class="userinfo-nickname">{{userInfo.nickName}}</text>
         </div>
       </block>
-      <van-button  class= "anniu"  style="width:50px">></van-button>
+      <van-button  class= "anniu"  style="width:50px" bindtap="Go2Mpp">></van-button>
     </view>
     
     <view class="usermotto">
@@ -41,7 +39,7 @@
     <div>
       <text class="usedTools">常用工具\n\n</text>
     </div>
-    <van-button icon="chat-o" type="default" >评论</van-button>
+    <van-button icon="chat-o" type="default" bindtap="Go2Gmsg">评论</van-button>
     <text class="usedTools">\n\n</text>
     <van-button icon="question-o" type="default" >帮助与反馈</van-button>
     <text class="usedTools">\n\n</text>

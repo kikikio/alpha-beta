@@ -1,5 +1,5 @@
 <view class="container_father">
-<van-tabbar
+<!-- <van-tabbar
   active="{{ active }}"
   active-color="#07c160"
   inactive-color="#000"
@@ -8,7 +8,7 @@
   <van-tabbar-item icon="home-o">首页</van-tabbar-item>
   <van-tabbar-item icon="friends-o">广场</van-tabbar-item>
   <van-tabbar-item icon="setting-o" bindtap="go2Me">我</van-tabbar-item>
-</van-tabbar>
+</van-tabbar> -->
 
 <van-search
   value="{{ value }}"
@@ -38,7 +38,11 @@
 
 <van-tabs animated>
   <van-tab title="学习任务">
-    <text>1、背5万个单词\n2、复习软件工程\n3、阅读构建之法</text>
+    <text>
+      1、背5万个单词\n
+      2、复习软件工程\n
+      3、阅读构建之法
+    </text>
   </van-tab>
   <van-tab title="健身任务">
     <text>
@@ -60,10 +64,19 @@
 <van-tabs animated>
   <van-tab title="学习组">
     <!--Bug：字多了之后底部看不全-->
-    <text>朱小隆\n陈小泽\n谢小锋</text>
+    <!-- 此Bug已修复，2020-11-19 CHZ -->
+    <text>
+      朱小隆\n
+      陈小泽\n
+      谢小锋
+    </text>
   </van-tab>
   <van-tab title="健身组">
-    <text>谢小锋\n朱小隆\n陈小泽</text>
+    <text>
+      谢小锋\n
+      朱小隆\n
+      陈小泽
+    </text>
   </van-tab>
 </van-tabs>
 </view>
