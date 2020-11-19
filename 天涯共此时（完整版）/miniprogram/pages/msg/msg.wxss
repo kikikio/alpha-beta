@@ -1,0 +1,74 @@
+/* pages/msg/msg.wxss */
+page{
+   width: 100%;
+   height: 100%;
+ }
+ .view_bar{
+    width: 100%;
+    height: 5%;
+    text-align: center;
+ }
+ .view_contain {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .view_1 {
+   position: relative;
+   display: flex;
+   left:5%;
+   width: 90%;
+   height: 20%;
+   border-radius: 40rpx;
+   flex-direction: column;
+   background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1605797851593&di=0d824256b6f7bb8df5ca97af3cecd1af&imgtype=0&src=http%3A%2F%2Fpic24.nipic.com%2F20121011%2F668573_133958405141_2.jpg);
+   background-repeat: repeat;
+ }
+
+ .view_2 {
+   position: relative;
+   display: flex;
+   left:5%;
+   width: 90%;
+   height: 20%;
+   background-color: rgb(146, 90, 90);
+   border-radius: 50rpx;
+   flex-direction: column;
+   background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1605797851593&di=0d824256b6f7bb8df5ca97af3cecd1af&imgtype=0&src=http%3A%2F%2Fpic24.nipic.com%2F20121011%2F668573_133958405141_2.jpg);
+   background-repeat: repeat; 
+ }
+
+ .view_3{
+   position: relative;
+   display: flex;
+   left:5%;
+   width: 90%;
+   height: 20%;
+   background-color: rgb(146, 90, 90);
+   border-radius: 50rpx;
+   flex-direction: column;
+   background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1605797851593&di=0d824256b6f7bb8df5ca97af3cecd1af&imgtype=0&src=http%3A%2F%2Fpic24.nipic.com%2F20121011%2F668573_133958405141_2.jpg);
+   background-repeat: repeat;
+ }
+
+ .gray{
+    color: darkgray;
+    font-family: "微软雅黑";
+    font-size: 10px;
+ }
+
+ .title{
+  color: rgb(255, 255, 255);
+  font-family: "微软雅黑";
+  font-size: 15px;
+  font-weight: 900;
+  padding: 20px;
+}
+
+.text{
+  color: rgb(255, 255, 255);
+  font-family: "微软雅黑";
+  font-size: 10px;
+  font-weight: 500;
+  padding: 30px;
+}

@@ -1,0 +1,69 @@
+<view class="container_father">
+<van-tabbar
+  active="{{ active }}"
+  active-color="#07c160"
+  inactive-color="#000"
+  bind:change="onChange"
+>
+  <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">广场</van-tabbar-item>
+  <van-tabbar-item icon="setting-o" bindtap="go2Me">我</van-tabbar-item>
+</van-tabbar>
+
+<van-search
+  value="{{ value }}"
+  shape="round"
+  background="#506C7E"
+  placeholder="请输入搜索关键词"
+/>
+
+<van-calendar
+  title="日历"
+  poppable="{{ false }}"
+  show-confirm="{{ false }}"
+  class="calendar"
+  show-title="{{ false }}"
+/>
+<view class="container">
+  <view class="today_mission">今日任务</view>
+</view>
+<view class="container_1">
+  <view class="my_mission"><van-icon name="underway" size="22px"/>我的任务</view>
+  <view class="add" bindtap="turnto">
+    <navigator  url="pages/logs/logs" open-type="switchTab">
+      <van-icon name="plus" size="15px"/>添加
+    </navigator>
+  </view>
+</view>
+
+<van-tabs animated>
+  <van-tab title="学习任务">
+    <text>1、背5万个单词\n2、复习软件工程\n3、阅读构建之法</text>
+  </van-tab>
+  <van-tab title="健身任务">
+    <text>
+    1、对空拳击5万次\n
+    2、跑操500圈\n
+    3、躺在床上刷抖音
+    </text>
+  </van-tab>
+</van-tabs>
+
+<view class="container">
+  <view class="today_mission">共享计划组</view>
+</view>
+<view class="container_1">
+  <view class="my_mission"><van-icon name="friends" size="22px"/>计划组</view>
+  <view class="add"><van-icon name="plus" size="15px"/>添加</view>
+</view>
+
+<van-tabs animated>
+  <van-tab title="学习组">
+    <!--Bug：字多了之后底部看不全-->
+    <text>朱小隆\n陈小泽\n谢小锋</text>
+  </van-tab>
+  <van-tab title="健身组">
+    <text>谢小锋\n朱小隆\n陈小泽</text>
+  </van-tab>
+</van-tabs>
+</view>

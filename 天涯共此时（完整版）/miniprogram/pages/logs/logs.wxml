@@ -1,0 +1,76 @@
+<van-nav-bar
+  title="标题"
+  left-text="返回"
+  right-text="按钮"
+  left-arrow
+  bind:click-left="onClickLeft"
+  bind:click-right="onClickRight"
+/>
+<view class="container1">
+  <van-cell-group>
+  <van-field
+    size="large"
+    value="{{ message }}"
+    label="任务"
+    type="textarea"
+    placeholder="请输入你的任务"
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+</view>
+
+<view class="container2">
+
+<van-cell title="开始时间" is-link bind:click="showPopup_start_date" />
+<van-popup
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: 30%"
+  bind:close="onClose"
+/>
+
+<van-cell title="结束日期" is-link bind:click="showPopup_end_date" />
+<van-popup
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: 30%"
+  bind:close="onClose"
+/>
+
+<van-cell title="打卡时间" is-link bind:click="showPopup_clock" />
+<van-popup
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: 30%"
+  bind:close="onClose"
+/>
+
+<van-cell title="提醒时间" is-link bind:click="showPopup_remind" />
+<van-popup
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: 30%"
+  bind:close="onClose"
+/>
+</view>
+<view class="container3">
+  <van-cell-group>
+  <van-field
+    size="large"
+    value="{{ message }}"
+    label="备注"
+    type="textarea"
+    placeholder="请输入备注"
+    autosize
+    border="{{ false }}"
+  />
+  </van-cell-group>
+</view>
+
+<van-button round type="primary" size="large" color="#CCBE97">确定</van-button>
+

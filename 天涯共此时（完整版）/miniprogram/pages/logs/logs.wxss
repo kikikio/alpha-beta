@@ -1,0 +1,13 @@
+page {
+  background-color: #F8F8F8;
+}
+.container1 {
+  padding: 50rpx;
+}
+
+.container2 {
+  padding: 30rpx;
+}
+.container3 {
+  padding: 50rpx;
+}

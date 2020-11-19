@@ -1,0 +1,63 @@
+<!--pages/msg/msg.wxml-->
+
+<!--顶栏-->
+<van-nav-bar
+  title="建筑考研官方"
+  left-text=""
+  left-arrow
+  bind:click-left="onClickLeft"
+  bind:click-right="onClickRight"
+/>
+<view class="view_contain">
+  <view class="view_bar">
+    <text class="gray">2020-2-14</text>
+  </view>
+  <view class="view_1">
+    <span>
+      <text>　　　　　　　　　　　　　　　</text>
+      <van-tag mark type="danger" size="large" color="rgb(185, 156, 61)">活动</van-tag>
+    </span>
+    <div>
+      <text class="title">21天攒图计划招募令</text>
+    </div>
+    <div>
+      <text class="text">每日一画，不画就出局\n</text>
+      <text class="text">来吧，一起坚持21，做行动派</text>
+    </div>
+  </view>
+  <view class="view_bar">
+    <text class="gray">2020-2-12</text>
+  </view>
+  <view class="view_2">
+    <span>
+      <text>　　　　　　　　　　　　　　　</text>
+      <van-tag mark type="danger" size="large" color="rgb(185, 156, 61)">活动</van-tag>
+    </span>
+    <div>
+      <text class="title">21天攒图计划招募令</text>
+    </div>
+    <div>
+      <text class="text">每日一画，不画就出局\n</text>
+      <text class="text">来吧，一起坚持21，做行动派</text>
+    </div>
+  </view>
+  <view class="view_bar">
+    <text class="gray">2020-2-10</text>
+  </view>
+  <view class="view_3">
+    <span>
+      <text>　　　　　　　　　　　　　　　</text>
+      <van-tag mark type="danger" size="large" color="rgb(185, 156, 61)">活动</van-tag>
+    </span>
+    <div>
+      <text class="title">21天攒图计划招募令</text>
+    </div>
+    <div>
+      <text class="text">每日一画，不画就出局来吧\n</text>
+      <text class="text">来吧，一起坚持21，做行动派</text>
+    </div>
+  </view>
+
+  <view class="view_4">
+  </view>
+</view>
