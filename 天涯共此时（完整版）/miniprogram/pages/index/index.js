@@ -68,10 +68,5 @@ Page({
     wx.navigateTo({
       url: '../logs/logs',
     })
-  },
-  // go2Me:function(){
-  //   wx.switchTab({
-  //     url: '../me/me',
-  //   })
-  // }
+  }
 })

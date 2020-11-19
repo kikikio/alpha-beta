@@ -51,6 +51,16 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  Go2Gmsg:function(){
+    wx.navigateTo({
+      url: '../Gmsg/Gmsg',
+    })
+  },
+  Go2Mpp:function(){
+    wx.navigateTo({
+      url: '../mpp/mpp',
+    })
   }
 })
 
