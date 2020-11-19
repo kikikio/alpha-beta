@@ -1,0 +1,81 @@
+<!--mpp.wxml-->
+
+<view class="view_contain">
+  <view class= "view_0">
+    <view class="top1">
+    </view>
+    <view class="userinfo" >
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <div>       
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}　</text>
+          <van-tag round type="primary" color="#AD974A" >lv.10</van-tag>
+        </div>
+        <text class="mpp1">个人主页</text>
+      </block>
+      <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+      </view>
+    </view>
+    <view class="view_1">
+        <text class="black">　福州大学　　　　　　计算机系\n\n</text>
+        <text class="gold">2,334,712</text>
+        <text class="gray">人关注他　</text>
+        <text class="gold">20</text>
+        <text class="gray">关注他的人</text>
+    </view>
+  </view>
+  <view class="view_2">
+    <van-search
+      value="{{ value }}"
+      label="历史计划"
+      label-color="blue"
+      placeholder="请输入搜索关键词"
+      use-action-slot
+      bind:change="onChange"
+      bind:search="onSearch"
+    >
+      <view slot="action" bind:tap="onClick">搜索</view>
+    </van-search>
+  </view>
+
+  <view class="view_3">
+    <div>
+      <span>
+        <text>　</text>
+        <van-image
+          round
+          width="2rem"
+          height="2rem"
+          src="https://img.yzcdn.cn/vant/cat.jpeg"
+        />
+        <text>　me　　</text>
+        <van-tag color="#91918d">7小时前\n\n\n\n</van-tag>
+      </span>
+    </div>
+    <text class="text1">\n　　　　　#软件工程期末补考计划\n</text>
+    <text>　　　</text>
+    <van-image width="120" height="60" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+  </view>
+  <view class="view_3p5">
+  </view>
+  <view class="view_4">
+    <div>
+      <span>
+        <text>　</text>
+        <van-image
+          round
+          width="2rem"
+          height="2rem"
+          src="https://img.yzcdn.cn/vant/cat.jpeg"
+        />
+        <text>　me　　</text>
+        <van-tag color="#91918d">17小时前\n\n\n\n</van-tag>
+      </span>
+    </div>
+    <text class="text1">\n　　　　　#软件工程期末考计划\n</text>
+    <text>　　　</text>
+    <van-image width="120" height="60" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+  </view>
+</view>

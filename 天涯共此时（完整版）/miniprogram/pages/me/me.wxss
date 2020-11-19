@@ -1,0 +1,87 @@
+/**me.wxss**/
+
+page{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.view_contain {
+  width: 100%;
+  height: 100%;
+}
+
+.view_1 {
+  width: 100%;
+  height: 17%;
+  background: #ffffff;
+}
+
+.view_1p5 {
+  width: 100%;
+  height: 1px;
+  background: #b8b5b5;
+}
+
+.view_2 {
+  width: 100%;
+  height: 55%;
+  background: #ffffff;
+}
+
+.view_3{
+  position: relative;
+  width: 100%;
+  height: 17.7%;
+}
+
+.view_3p5{
+  background: #b8b5b5;
+  position: relative;
+  width: 100%;
+  height: 1px;
+}
+.view_4{
+  width: 100%;
+  height: 10%;
+  background: #ffffff;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: rgb(0, 0, 0);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  font-size: larger;
+  font-weight: 900;
+}
+.usedTools {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  color: rgb(31, 30, 30);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+.usermotto {
+  margin-top: 200px;
+}
+
+.anniu{
+  position: absolute;
+  left: 75%;
+  padding: 10px;
+  top: 4%;
+}
