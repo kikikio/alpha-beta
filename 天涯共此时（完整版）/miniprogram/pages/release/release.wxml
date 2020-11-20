@@ -1,0 +1,24 @@
+<view class="main">
+  <view class="container">
+      <view class="release-content">
+      <textarea placeholder="写下要发布的计划">
+      </textarea>
+    </view>
+    <view class="release-other">
+      <view class="release-note">
+        <text>最多发布4张照片</text>
+      </view>
+      <view class="release-warn">
+        <van-button bindtap="noteit" round size="small"  type="primary">发帖规范</van-button>
+      </view>
+    </view>
+    <view class="relsase-picture">
+      <van-uploader file-list="{{ fileList }}" max-count="4" bind:after-read="afterRead" />
+    </view>
+    <view class="release-image">
+      <van-button bindtap="releaseit" round  size="small" type="info">发布</van-button>
+    </view>
+  </view>
+</view>
+
+

@@ -1,0 +1,60 @@
+<swiper class="banner" indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay interval="3000">
+  <swiper-item>
+    <image src="/images/v2_q8plnv.png" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/v2_q8plo0.png"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/v2_q8plo5.png"></image>
+  </swiper-item>
+</swiper>
+
+<view class="main">
+
+  <navigator url="/pages/content/content">
+  <view class="container" wx:key="index" wx:for="{{datalist}}">
+    <view class="content">
+      <view class="head-image">
+            <van-image round width="2rem" height="2rem" src="{{item.userimage}}"/>
+      </view>
+      <view class="head-another ">
+            <view class="content-head">
+              <text class="head-name">{{item.username}}</text><text  space="ensp" class="head-date">{{item.releasetime}}</text>
+            </view>
+            <view class="content-title">
+                <text class="plan-name">{{item.planname}}</text>
+            </view>
+            <view class="content-image">
+              <image src="{{item.images}}"></image>
+            </view>
+      </view>
+    </view>
+
+    <view class="refrence">
+                <van-icon name="like-o" /><text>{{item.likenum}}</text>
+                <van-icon name="star-o" /><text>{{item.starnum}}</text>
+                <van-icon name="chat-o" /><text>{{item.chatnum}}</text>
+                <van-icon name="share-o" /><text>{{item.sharenum}}</text>
+    </view>
+  </view>
+  </navigator>
+
+</view>
+
+
+
+<view bindtap="releaseplan">
+  <image class="addbutton" src="/images/input.png"></image>
+</view>
+
+
+
+
+
+
+<!-- <van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item name="home" icon="home-o">主页</van-tabbar-item>
+  <van-tabbar-item name="search" icon="search">广场</van-tabbar-item>
+  <van-tabbar-item name="setting" icon="setting-o">我的</van-tabbar-item>
+</van-tabbar> -->

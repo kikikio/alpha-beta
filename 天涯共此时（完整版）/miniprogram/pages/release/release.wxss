@@ -1,0 +1,41 @@
+.main{
+  box-sizing: border-box;
+  padding: 30rpx;
+  background: rgb(248, 248, 248);
+  height: 750px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px; 
+  display: flex;
+  flex-direction: column;
+}
+.release-content{
+  height: 250px;
+}
+.release-other{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 10 px;
+}
+
+.release-image{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 定义字体 */
+.release-note{
+  font-size: small;
+  color: #cecece;
+}
+.release-warn{
+  font-size: small;
+}
