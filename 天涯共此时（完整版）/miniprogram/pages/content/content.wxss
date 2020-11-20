@@ -1,19 +1,111 @@
-.hand-name{
-  font-weight: bold;
+/* 计划的样式设置 */
+.main
+{
+  box-sizing: border-box;
+  padding: 30rpx;
+  background: #f8f8f8;
 }
 .container{
-  display: inline;
-  border: 1px solid gray;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px; 
+  margin-bottom: 50px;
 }
-.hand-date{
-  color: antiquewhite;
+.head{
+  display: flex;
+  flex-direction: column;
+}
+.headone{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.headone-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.head-info{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.headtwo{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.content image
+{
+  width: 100%;
+  border-radius: 5%;
+}
+
+/* 评论的样式设置 */
+.comment{
+  display: flex;
+  flex-direction: row;
+}
+.parttwo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.comment-name{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.comment-other{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 我的评论样式设置 */
+.mycomment{
+  position: fixed;
+  bottom: 20px;
+  margin-left: 25px;
+}
+.comment-box{
+  border: 1px solid white;
+  border-radius: 5%;
+  background: white;
+  width: 300px;
+}
+/* 对计划内容的字体样式进行设置 */
+.head-name{
+  font-weight: bold;
+  font-size: medium;
+  color: #3f3f3f;
+}
+.head-date{
+  font-size: 16px;
+  color: #cecece;
 }
 .plan-name{
-  font-size: large;
-  color: aqua;
+  color: #ccbe97;
 }
-.comment{
-  text-align: center;
-  display: inline;
+.content{
+  font-size: medium;
+  color: black;
+}
+
+/* 对评论内容的字体样式进行定义 */
+.comment-name{
+  font-weight: bold;
+  font-size: medium;
+  color: #3f3f3f;
+}
+.comment-content{
+  font-size: medium;
+  color: black;
+}
+.comment-date{
+  font-size: small;
+  color: #cecece;
 }

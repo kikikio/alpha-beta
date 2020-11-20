@@ -1,0 +1,9 @@
+.picture{
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+.picture image{
+  width: 100%;
+}
