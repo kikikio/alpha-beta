@@ -1,0 +1,58 @@
+<view class="container_1">
+  <view class="back">
+    <navigator  url="pages/signin/signin" open-type="switchTab">    
+      <van-icon name="arrow-left" size="22px"/>
+    </navigator>
+  </view>
+  <view class="signin">
+    <navigator  url="pages/signin/signin" open-type="switchTab">
+      <van-icon name="share" size="15px"/>Sign in
+    </navigator>
+  </view>
+</view>
+
+
+
+
+<view class="container_2">
+  <view class="first">填写基本信息</view>
+  <view class="second">介绍一下自己吧</view>
+  <view class="third">
+    <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+  </view>
+  <view class="forth">上传头像</view>
+
+  <van-radio-group value="{{ radio }}" bind:change="onChange">
+    <van-radio name="1" checked-color="#d86cd8">女生</van-radio>
+    <van-radio name="2" checked-color="#07c160">男生</van-radio>
+  </van-radio-group>
+</view>
+
+<van-divider />
+
+<view class="container_3">
+  <van-cell-group>
+    <van-field
+      value="{{ username }}"
+      required
+      clearable
+      label="昵称"
+      icon="question-o"
+      placeholder="请输入昵称"
+      bind:click-icon="onClickIcon"
+    />
+
+    <van-field
+      value="{{ password }}"
+      type="password"
+      label="学号"
+      placeholder="请输入学号"
+      required
+      border="{{ false }}"
+    />
+  </van-cell-group>
+</view>
+
+
+<van-divider />
+<van-button round type="primary" size="large" color="#CCBE97">Sign up</van-button>
