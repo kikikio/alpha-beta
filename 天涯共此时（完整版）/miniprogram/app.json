@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/sq_index/index",
+    "pages/content/content",
     "pages/me/me",
     "pages/msg/msg",
     "pages/mpp/mpp",
@@ -19,6 +21,7 @@
     "selectedColor": "#1296db",
     "list": [
       {"pagePath": "pages/index/index","text": "首页"},
+      {"pagePath": "pages/sq_index/index","text":"广场"},
       {"pagePath": "pages/me/me","text": "我的"}
     ]
   },
@@ -39,6 +42,7 @@
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-datetime-picker": "@vant/weapp/datetime-picker/index",
     "van-nav-bar": "@vant/weapp/nav-bar/index",
-    "van-field": "@vant/weapp/field/index"
+    "van-field": "@vant/weapp/field/index",
+    "van-image": "@vant/weapp/image/index"
   }
 }
