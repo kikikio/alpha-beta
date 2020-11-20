@@ -1,0 +1,72 @@
+/* pages/tomato/tomato.wxss */
+
+page{
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+}
+
+.view_contain {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.view_0{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.view_1 {
+  position: relative;
+  left: 30%;
+  width: 40%;
+  height: 32%;
+  display: flex;
+  justify-content: center;
+}
+
+.view_2 {
+  position: relative;
+  width: 90%;
+  height: 10%;
+  left: 5%;
+}
+
+.view_3 {
+  position: relative;
+  width: 90%;
+  height: 10%;
+  left: 5%;
+}
+
+.gray1{
+  padding: 12px;
+  font-size: 15px;
+  font-family: "微软雅黑";
+  letter-spacing: 5px;
+  color: #91918d;
+}
+
+.gray{
+  padding: 30px;
+  font-size: 15px;
+  font-family: "微软雅黑";
+  letter-spacing: 5px;
+  color: #91918d;
+}
+
+/* 倒计时 */
+.item {
+  display: inline-block;
+  width: 85px;
+  height: 40px;
+  margin-right: 10px;
+  color: rgb(255, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 2px;
+}
