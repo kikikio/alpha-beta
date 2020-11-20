@@ -1,0 +1,54 @@
+.container_1 {
+  padding: 15rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100rpx;
+}
+.back {
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.back van-icon{
+  color: #CCBE97;
+}
+.signin {
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.signin van-icon{
+  color: #CCBE97;
+}
+
+.container_2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first {
+  font-size: 45rpx;
+  margin-bottom: 15rpx;
+}
+.second {
+  font-size: 30rpx;
+  color: #afafaf;
+}
+.third {
+  margin-top: 30rpx;
+  margin-bottom: 0rpx;
+}
+.forth {
+  font-size: 25rpx;
+  margin-bottom: 30rpx;
+  color: #afafaf;
+}
+
+.container_3 {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
