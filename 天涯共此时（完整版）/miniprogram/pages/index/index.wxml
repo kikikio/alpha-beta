@@ -19,6 +19,8 @@
 
 <van-calendar
   title="日历"
+  color="green"
+  row-height="38"
   poppable="{{ false }}"
   show-confirm="{{ false}}"
   class="calendar"
@@ -28,7 +30,7 @@
   <view class="today_mission">今日任务</view>
 </view>
 <view class="container_1">
-  <view class="my_mission"><van-icon name="underway" size="22px"/>我的任务</view>
+  <view class="my_mission" bindtap="Go2Tomato"><van-icon name="underway" size="22px"/>我的任务</view>
   <view class="add" bindtap="turnto">
     <navigator  url="pages/logs/logs" open-type="switchTab">
       <van-icon name="plus" size="15px"/>添加
@@ -58,7 +60,11 @@
 </view>
 <view class="container_1">
   <view class="my_mission"><van-icon name="friends" size="22px"/>计划组</view>
-  <view class="add"><van-icon name="plus" size="15px"/>添加</view>
+  <view class="add" bindtap="AddGroup">
+    <navigator  url="../CreateGroup" open-type="switchTab">
+      <van-icon name="plus" size="15px"/>添加
+    </navigator>
+  </view>
 </view>
 
 <van-tabs animated>

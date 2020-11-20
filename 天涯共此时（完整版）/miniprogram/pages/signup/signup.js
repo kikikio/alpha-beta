@@ -85,6 +85,16 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  signin:function(){
+    wx.navigateTo({
+      url: '../signin/signin',
+    })
+  },
+  Go2MainPage:function(){
+    wx.switchTab({
+      url: '../index/index',
+    })
   }
 });
 

@@ -1,0 +1,48 @@
+<van-cell-group class="container1">
+    <van-cell  title="修改头像"  >
+      <van-image
+        round
+        width="50rpx"
+        height="50rpx"
+        src="https://img.yzcdn.cn/vant/cat.jpeg"
+      />
+    </van-cell>
+    <van-cell title="修改昵称" value="猫"   />
+    <van-cell title="设置性别" >
+      <van-radio-group value="{{ radio }}" bind:change="onChange" >
+        <van-radio name="1">男</van-radio>
+        <van-radio name="2">女</van-radio>
+      </van-radio-group>
+    </van-cell>
+    <van-cell title="所在地区" value="中国" />
+    <van-cell title="本科院校" value="福州大学" />
+    <van-cell title="本科专业" value="计算机系"   />
+    <van-cell title="考研年份" bind:click="onTap" value="{{time}}" is-link/>
+    <van-cell title="报考院校" value="哥伦比亚大学" />
+  </van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{ message }}"
+    label="个性签名"
+    type="textarea"
+    placeholder="请输入"
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+<van-popup 
+    show="{{ show }}" 
+    position="bottom"
+    custom-style="height: 40%;"
+    bind:close="onClose"
+    round
+    >
+    <van-datetime-picker
+      type="year-month"
+      title="选择时间"
+      value="{{ currentDate }}"
+      bind:input="onInput"
+    />
+  </van-popup>
+

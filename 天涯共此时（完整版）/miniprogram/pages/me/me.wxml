@@ -23,7 +23,7 @@
           <text class="userinfo-nickname">{{userInfo.nickName}}</text>
         </div>
       </block>
-      <van-button  class= "anniu"  style="width:50px" bindtap="Go2Mpp"> >> </van-button>
+      <van-button  class= "anniu"  style="width:50px" bindtap="Go2Mpp"> > </van-button>
     </view>
     
     <view class="usermotto">
@@ -43,7 +43,7 @@
     <text class="usedTools">\n\n</text>
     <van-button icon="question-o" type="default" >帮助与反馈</van-button>
     <text class="usedTools">\n\n</text>
-    <van-button icon="setting-o" type="default" >系统设置</van-button>
+    <van-button icon="setting-o" type="default" bindtap="Go2Setting">系统设置</van-button>
     <text class="usedTools">\n\n</text>
   </view>
 

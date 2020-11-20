@@ -13,7 +13,7 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../logss/logs'
     })
   },
   onLoad: function () {
@@ -60,6 +60,11 @@ Page({
   Go2Mpp:function(){
     wx.navigateTo({
       url: '../mpp/mpp',
+    })
+  },
+  Go2Setting:function(){
+    wx.navigateTo({
+      url: '../setting/index',
     })
   }
 })

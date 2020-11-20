@@ -1,11 +1,26 @@
 {
   "pages": [
-    "pages/sq_index/index",
-    "pages/content/content",
+    "pages/login/login",
     "pages/me/me",
+    "pages/setting/index",
+    "pages/message/message",
+    "pages/account/account",
+    "pages/person/person",
+    
+    "pages/note/note",
+    "pages/release/release",
+    "pages/signin/signin",
+    "pages/signup/signup",
+    "pages/index/index",
+    "pages/2/2",
+    "pages/1/1",
+    "pages/CreateGroup/index",
+    "pages/sq_index/index",
+    "pages/tomato/tomato",
+    "pages/content/content",
+    
     "pages/msg/msg",
     "pages/mpp/mpp",
-    "pages/index/index",
     "pages/logs/logs",
     "pages/Gmsg/Gmsg",
     "pages/logss/logs"
@@ -43,6 +58,11 @@
     "van-datetime-picker": "@vant/weapp/datetime-picker/index",
     "van-nav-bar": "@vant/weapp/nav-bar/index",
     "van-field": "@vant/weapp/field/index",
-    "van-image": "@vant/weapp/image/index"
+    "van-image": "@vant/weapp/image/index",
+    "van-checkbox":"@vant/weapp/checkbox/index",
+    "van-checkbox-group":"@vant/weapp/checkbox-group/index",
+    "van-radio":"@vant/weapp/radio/index",
+    "van-radio-group":"@vant/weapp/radio-group/index",
+    "van-uploader":"@vant/weapp/uploader/index"
   }
 }

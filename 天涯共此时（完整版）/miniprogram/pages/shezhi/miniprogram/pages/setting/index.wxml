@@ -1,0 +1,13 @@
+<view class="container">
+  <van-cell-group class="container1">
+    <van-cell title="个人资料" is-link />
+  </van-cell-group>
+  <van-cell-group class="container1">
+    <van-cell title="账号与安全" is-link />
+    <van-cell title="消息与提醒" is-link   />
+    <van-cell title="清除缓存" is-link bind:click="showup"/>
+  </van-cell-group>
+</view>
+
+
+

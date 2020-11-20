@@ -1,0 +1,21 @@
+<van-cell-group title="密码设置">
+  <van-cell title="重置密码" value="修改" />
+</van-cell-group>
+<van-cell-group title="账号绑定（有助于账号丢失后快速找回）" >
+  <van-cell title="绑定手机" value="修改" >
+    <view>
+      <text>
+        187****1234
+      </text>
+    </view>
+  </van-cell>
+  <van-cell title="绑定微信"  >
+     <van-switch  size="30rpx" checked="{{ checked }}" bind:change="onChange" />
+  </van-cell>
+  <van-cell title="绑定QQ"  >
+     <van-switch  size="30rpx" checked="{{ checked1 }}" bind:change="onChange1"/>
+  </van-cell>
+  <van-cell title="绑定微博" >
+     <van-switch  size="30rpx" checked="{{ checked2 }}" bind:change="onChange2"/>
+  </van-cell>
+</van-cell-group>
