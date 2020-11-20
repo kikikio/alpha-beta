@@ -1,5 +1,5 @@
 <!--me.wxml-->
-
+<import>import {canIUse} from '../../dist/common/version.js'</import>
 <!--底栏-->
 <!-- <van-tabbar
   active="{{ active }}"
@@ -23,7 +23,7 @@
           <text class="userinfo-nickname">{{userInfo.nickName}}</text>
         </div>
       </block>
-      <van-button  class= "anniu"  style="width:50px" bindtap="Go2Mpp">></van-button>
+      <van-button  class= "anniu"  style="width:50px" bindtap="Go2Mpp"> >> </van-button>
     </view>
     
     <view class="usermotto">

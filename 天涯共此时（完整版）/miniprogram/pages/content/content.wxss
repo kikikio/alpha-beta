@@ -1,0 +1,19 @@
+.hand-name{
+  font-weight: bold;
+}
+.container{
+  display: inline;
+  border: 1px solid gray;
+  text-align: center;
+}
+.hand-date{
+  color: antiquewhite;
+}
+.plan-name{
+  font-size: large;
+  color: aqua;
+}
+.comment{
+  text-align: center;
+  display: inline;
+}
