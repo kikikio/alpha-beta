@@ -1,0 +1,4 @@
+.user{ size:50rpx;color:goldenrod ;display: flex;align-items: center;}
+.user1{ color: lightslategray;font-size:  30rpx;display: flex;align-items: center; }
+.user1{margin-top: 20px;}
+.user2{border-bottom-style: 0px;}

@@ -1,18 +1,15 @@
 <view class="container_1">
-  <view class="back">
-    <navigator  url="pages/signin/signin" open-type="switchTab">    
+  <!-- <view class="back">
+    <navigator url="pages/signin/signin" open-type="switchTab">
       <van-icon name="arrow-left" size="22px"/>
     </navigator>
-  </view>
-  <view class="signin">
+  </view> -->
+  <view class="signin" bindtap="signin">
     <navigator  url="pages/signin/signin" open-type="switchTab">
       <van-icon name="share" size="15px"/>Sign in
     </navigator>
   </view>
 </view>
-
-
-
 
 <view class="container_2">
   <view class="first">填写基本信息</view>
@@ -53,6 +50,5 @@
   </van-cell-group>
 </view>
 
-
 <van-divider />
-<van-button round type="primary" size="large" color="#CCBE97">Sign up</van-button>
+<van-button round type="primary" size="large" color="#CCBE97" bindtap="Go2MainPage">Sign up</van-button>

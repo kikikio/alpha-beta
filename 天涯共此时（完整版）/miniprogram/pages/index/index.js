@@ -68,5 +68,15 @@ Page({
     wx.navigateTo({
       url: '../logs/logs',
     })
+  },
+  AddGroup:function(){
+    wx.navigateTo({
+      url: '../CreateGroup/index',
+    })
+  },
+  Go2Tomato:function(){
+    wx.navigateTo({
+      url: '../tomato/tomato',
+    })
   }
 })

@@ -1,7 +1,9 @@
 .container_1 {
   padding: 15rpx;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  /* text-align: right;
+  float: right; */
   margin-bottom: 100rpx;
 }
 .back {
@@ -16,6 +18,9 @@
   font-size: 30rpx;
   display: flex;
   align-items: center;
+  justify-content:right;
+  /* text-align: right;
+  float: right; */
 }
 .signin van-icon{
   color: #CCBE97;

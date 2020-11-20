@@ -33,6 +33,9 @@ page{
   width: 90%;
   height: 10%;
   left: 5%;
+  display: flex;
+  /* vertical-align: center; */
+  justify-content: center;
 }
 
 .view_3 {
@@ -40,6 +43,9 @@ page{
   width: 90%;
   height: 10%;
   left: 5%;
+  display: flex;
+  /* vertical-align: center; */
+  justify-content: center;
 }
 
 .gray1{
@@ -64,7 +70,7 @@ page{
   width: 85px;
   height: 40px;
   margin-right: 10px;
-  color: rgb(255, 0, 0);
+  color: rgb(50, 255, 77);
   font-size: 40px;
   text-align: center;
   background-color: #f8f8f8;

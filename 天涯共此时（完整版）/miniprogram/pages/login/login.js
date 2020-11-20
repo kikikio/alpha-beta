@@ -61,6 +61,11 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  signup:function(){
+    wx.navigateTo({
+      url: '../signup/signup',
+    })
   }
 });
 
