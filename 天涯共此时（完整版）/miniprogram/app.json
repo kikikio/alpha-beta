@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/login/login",
+    "pages/selectRole/selectRole",
     "pages/me/me",
     "pages/setting/index",
     "pages/message/message",

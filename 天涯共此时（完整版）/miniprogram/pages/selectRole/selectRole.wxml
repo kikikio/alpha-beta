@@ -1,0 +1,17 @@
+<image src='../../images/2.JPG'></image>
+<view class="container"> 
+  <view class="item1">
+    <view>
+      <van-icon name="arrow-left" color="#F8E9D3" size="60rpx"/>
+    </view>
+  </view>
+  <view class="container1">
+    <view class="item2">
+      <van-button color="#FF1493" block bindtap="signup">用户登录</van-button>
+    </view>
+    <view class="item3">
+      <van-button color="#7232dd" block>管理员登陆</van-button>
+    </view>
+  </view> 
+</view>
+

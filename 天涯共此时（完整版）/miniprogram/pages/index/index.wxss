@@ -1,11 +1,28 @@
-.calendar {
-  --calendar-height: 360rpx;
+image {
+  height: 400rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 750rpx;
+  z-index: -999;
 }
-
+.space {
+  height: 310rpx;
+  background-color: transparent;
+}
+.container_father {
+  padding-bottom: 20rpx;
+}
 .container {
   padding: 20rpx;
+  display: flex;
+  justify-content: center;
 }
-
+.today_mission {
+  font-size: 35rpx;
+  font-weight: bold;
+}
 .today_mission {
   font-size: 35rpx;
   font-weight: bold;
