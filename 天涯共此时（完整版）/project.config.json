@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "miniprogram/",
-  "cloudfunctionRoot": "cloudfunctions/",
+  "cloudfunctionRoot": "/miniprogram/cloudfunctions/",
   "setting": {
     "urlCheck": true,
     "es6": true,
@@ -26,11 +26,13 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "packNpmManually": false,
-    "packNpmRelationList": []
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
   "appid": "wx84b4cb260ecf5d2d",
   "projectname": "%E5%A4%A9%E6%B6%AF%E5%85%B1%E6%AD%A4%E6%97%B6%EF%BC%88%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%89",
@@ -39,22 +41,18 @@
   "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
-      "current": -1,
       "list": []
     },
     "conversation": {
-      "current": -1,
       "list": []
     },
     "plugin": {
-      "current": -1,
       "list": []
     },
     "game": {
       "list": []
     },
     "miniprogram": {
-      "current": 0,
       "list": [
         {
           "id": -1,
