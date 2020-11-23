@@ -3,19 +3,18 @@
 <!--顶栏-->
 <van-nav-bar
   title="通知"
-  left-text="返回"
   left-arrow
   bind:click-left="onClickLeft"
   bind:click-right="onClickRight"
 />
 <view class="view_1">
   <van-cell-group title="建筑">
-    <van-cell icon="wap-home" title="建筑考研官方" is-link size="large" value="5分钟前" label="你的快题怎么样了？" link-type="navigateTo" url="/pages/msg/msg.wxml"/>
+    <van-cell icon="wap-home" title="建筑考研官方" is-link size="large" value="5分钟前" label="你的快题怎么样了？" link-type="navigateTo" bindtap="GoToDetail"/>
   </van-cell-group>
   <van-cell-group title="计算机">
-    <van-cell icon="graphic" title="计算机考研官方" is-link size="large" value="45分钟前" label="你的软工怎么样了？" link-type="navigateTo"  url="/pages/msg/msg.wxml" />
+    <van-cell icon="graphic" title="计算机考研官方" is-link size="large" value="45分钟前" label="你的软工怎么样了？" link-type="navigateTo" bindtap="GoToDetail" />
   </van-cell-group>
-  <van-cell-group title="生物工程">
-    <van-cell icon="graphic" title="生物工程考研官方" is-link size="large" value="2小时前" label="你的兔子怎么样了？" link-type="navigateTo" url="/pages/msg/msg.wxml" />
+  <van-cell-group title="考研">
+    <van-cell icon="graphic" title="考研消息" is-link size="large" value="2小时前" label="xxx发布了清华考研计划" link-type="navigateTo" bindtap="GoToContent" />
   </van-cell-group>
 </view>
