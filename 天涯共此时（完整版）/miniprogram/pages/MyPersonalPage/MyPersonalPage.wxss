@@ -5,7 +5,7 @@ page{
   height: 100%;
 }
 
-
+/* 个人主页字体 */
 .mpp1{
   font-family: ""微软雅黑"";
   position: absolute;
@@ -13,7 +13,7 @@ page{
   font-size: large;
   font-weight: 900;
   top: 2%;
-  left: 35%;
+  left: 39%;
 }
 
 .view_contain {
@@ -26,12 +26,13 @@ page{
   width: 100%;
   height: 5%;
 }
+/* 头像所在view框 */
 .userinfo {
   position: relative;
   display: flex;
-  left: 10%;
-  width: 80%;
-  height: 50%;
+  left: 4%;
+  width: 90%;
+  height: 45%;
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 50rpx;
   border-top-right-radius: 50rpx;
@@ -39,9 +40,9 @@ page{
 }
 .view_1 {
   position: relative;
-  left: 10%;
-  width: 80%;
-  height: 40%;
+  left: 4%;
+  width: 90%;
+  height: 30%;
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 50rpx;
   border-bottom-right-radius: 50rpx;
@@ -49,12 +50,13 @@ page{
 
 .view_0{
   width: 100%;
-  height: 40%;
-  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1605718920976&di=b8fca381be09cfbe66b55b5beeaf065c&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F74%2F02%2F01300123078514132081026201147.jpg);
+  height: 35%;
+  background-image: url(https://goss.veer.com/creative/vcg/veer/800water/veer-161251290.jpg);
   background-repeat: repeat;
 }
 
 .gold{
+  margin:10px;
   padding: 5px;
   font-size: 13px;
   font-family: "微软雅黑";
@@ -62,7 +64,7 @@ page{
 }
 
 .black{
-  padding: 5px;
+  margin:0px;
   font-size: 15px;
   font-family: "微软雅黑";
   color: #000000;
@@ -76,12 +78,11 @@ page{
   color: #91918d;
 }
 
-.text1{
+.content_text{
   font-size: 10px;
   font-family: "微软雅黑";
   color: #000000;
-  text-indent: 10px;
-  text-align: left;
+
 }
 
 .view_2 {
@@ -90,21 +91,20 @@ page{
   background: #98dd18;
 }
 
-.view_3{
+.title{
+  width: 100%;
+  height: 3%;
+}
+
+.content{
   width: 100%;
   height: 25%;
-  flex-direction: column;
 }
 
 .view_3p5{
   width: 100%;
   height: 1px;
-  background: rgb(14, 14, 14);
-}
-
-.view_4{
-  width: 100%;
-  height: 25%;
+  background: rgb(204, 204, 204);
 }
 
 .userinfo-avatar {
