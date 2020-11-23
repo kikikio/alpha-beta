@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/selectRole/selectRole",
+    
     "pages/me/me",
     "pages/setting/index",
     "pages/message/message",
     "pages/account/account",
     "pages/person/person",
-    
+    "pages/selectRole/selectRole",
     "pages/note/note",
     "pages/release/release",
     "pages/signin/signin",
