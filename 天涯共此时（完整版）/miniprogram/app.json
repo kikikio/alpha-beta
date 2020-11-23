@@ -19,10 +19,10 @@
     "pages/tomato/tomato",
     "pages/content/content",
     
-    "pages/msg/msg",
-    "pages/mpp/mpp",
+    "pages/DetailsOfInform/DetailsOfInform",
+    "pages/MyPersonalPage/MyPersonalPage",
     "pages/logs/logs",
-    "pages/Gmsg/Gmsg",
+    "pages/Inform/Inform",
     "pages/logss/logs"
   ],
   "window":{
