@@ -54,12 +54,12 @@ Page({
   },
   Go2Gmsg:function(){
     wx.navigateTo({
-      url: '../Gmsg/Gmsg',
+      url: '../Inform/Inform',
     })
   },
   Go2Mpp:function(){
     wx.navigateTo({
-      url: '../mpp/mpp',
+      url: '../MyPersonalPage/MyPersonalPage',
     })
   },
   Go2Setting:function(){
@@ -68,4 +68,3 @@ Page({
     })
   }
 })
-

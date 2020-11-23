@@ -65,5 +65,15 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  GoToDetail:function(){
+    wx.navigateTo({
+      url: '../DetailsOfInform/DetailsOfInform',
+    })
+  },
+  GoToContent:function(){
+    wx.navigateTo({
+      url: '../content/content',
+    })
   }
 })
