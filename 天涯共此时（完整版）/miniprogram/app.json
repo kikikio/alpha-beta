@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/me/me",
     "pages/setting/index",
     "pages/message/message",
