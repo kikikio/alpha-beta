@@ -1,7 +1,7 @@
 .container_1 {
   padding: 15rpx;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   /* text-align: right;
   float: right; */
   margin-bottom: 100rpx;

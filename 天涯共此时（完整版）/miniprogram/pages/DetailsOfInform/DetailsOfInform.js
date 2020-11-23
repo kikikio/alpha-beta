@@ -1,4 +1,4 @@
-// pages/msg/msg.js
+// DetailsOfInform.js
 Page({
    // 顶栏
    onClickLeft() {

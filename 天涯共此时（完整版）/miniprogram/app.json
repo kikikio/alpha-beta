@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/login/login",
+    "pages/selectRole/selectRole",
     "pages/me/me",
     "pages/setting/index",
     "pages/message/message",
@@ -18,10 +18,10 @@
     "pages/tomato/tomato",
     "pages/content/content",
     
-    "pages/msg/msg",
-    "pages/mpp/mpp",
+    "pages/DetailsOfInform/DetailsOfInform",
+    "pages/MyPersonalPage/MyPersonalPage",
     "pages/logs/logs",
-    "pages/Gmsg/Gmsg",
+    "pages/Inform/Inform",
     "pages/logss/logs"
   ],
   "window":{
