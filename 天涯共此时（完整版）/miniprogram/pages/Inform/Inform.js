@@ -1,4 +1,4 @@
-// pages/Gmsg/Gmsg.js
+// Inform.js
 Page({
   // 顶栏
   onClickLeft() {
