@@ -1,4 +1,4 @@
-<!--pages/msg/msg.wxml-->
+<!--DetailsOfInform.wxml-->
 
 <!--顶栏-->
 <van-nav-bar
@@ -12,7 +12,7 @@
   <view class="view_bar">
     <text class="gray">2020-2-14</text>
   </view>
-  <view class="view_1">
+  <view class="block">
     <span>
       <text>　　　　　　　　　　　　　　　</text>
       <van-tag mark type="danger" size="large" color="rgb(185, 156, 61)">活动</van-tag>
@@ -28,7 +28,7 @@
   <view class="view_bar">
     <text class="gray">2020-2-12</text>
   </view>
-  <view class="view_2">
+  <view class="block">
     <span>
       <text>　　　　　　　　　　　　　　　</text>
       <van-tag mark type="danger" size="large" color="rgb(185, 156, 61)">活动</van-tag>
@@ -44,7 +44,7 @@
   <view class="view_bar">
     <text class="gray">2020-2-10</text>
   </view>
-  <view class="view_3">
+  <view class="block">
     <span>
       <text>　　　　　　　　　　　　　　　</text>
       <van-tag mark type="danger" size="large" color="rgb(185, 156, 61)">活动</van-tag>

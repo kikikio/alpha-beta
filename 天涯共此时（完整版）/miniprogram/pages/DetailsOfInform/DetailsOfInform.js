@@ -1,8 +1,8 @@
-// pages/msg/msg.js
+// DetailsOfInform.js
 Page({
    // 顶栏
    onClickLeft() {
-    wx.showToast({ title: '点击返回', icon: 'none' });
+    wx.showToast({ title: '返回到通知页面', icon: 'none' });
   },
   /**
    * 页面的初始数据

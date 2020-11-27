@@ -1,4 +1,4 @@
-// pages/Gmsg/Gmsg.js
+// Inform.js
 Page({
   // 顶栏
   onClickLeft() {
@@ -65,5 +65,15 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  GoToDetail:function(){
+    wx.navigateTo({
+      url: '../DetailsOfInform/DetailsOfInform',
+    })
+  },
+  GoToContent:function(){
+    wx.navigateTo({
+      url: '../content/content',
+    })
   }
 })
