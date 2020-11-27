@@ -69,9 +69,9 @@ Page({
       url: '../logs/logs',
     })
   },
-  AddGroup:function(){
+  addGroup:function(){
     wx.navigateTo({
-      url: '../CreateGroup/index',
+      url: '../addGroup/addGroup',
     })
   },
   Go2Tomato:function(){

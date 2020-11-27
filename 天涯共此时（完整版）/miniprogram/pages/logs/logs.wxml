@@ -1,73 +1,98 @@
-<van-nav-bar
+<!-- <van-nav-bar
   title="标题"
   bind:click-left="onClickLeft"
   bind:click-right="onClickRight"
-/>
-<view class="container1">
-  <van-cell-group>
-  <van-field
-    size="large"
-    value="{{ message }}"
-    label="任务"
-    type="textarea"
-    placeholder="请输入你的任务"
-    autosize
-    border="{{ false }}"
-  />
-</van-cell-group>
-</view>
-
-<view class="container2">
-
-<van-cell title="开始时间" is-link bind:click="showPopup_start_date" />
-<van-popup
-  show="{{ show }}"
-  round
-  position="bottom"
-  custom-style="height: 30%"
-  bind:close="onClose"
-/>
-
-<van-cell title="结束日期" is-link bind:click="showPopup_end_date" />
-<van-popup
-  show="{{ show }}"
-  round
-  position="bottom"
-  custom-style="height: 30%"
-  bind:close="onClose"
-/>
-
-<van-cell title="打卡时间" is-link bind:click="showPopup_clock" />
-<van-popup
-  show="{{ show }}"
-  round
-  position="bottom"
-  custom-style="height: 30%"
-  bind:close="onClose"
-/>
-
-<van-cell title="提醒时间" is-link bind:click="showPopup_remind" />
-<van-popup
-  show="{{ show }}"
-  round
-  position="bottom"
-  custom-style="height: 30%"
-  bind:close="onClose"
-/>
-</view>
-<view class="container3">
-  <van-cell-group>
-  <van-field
-    size="large"
-    value="{{ message }}"
-    label="备注"
-    type="textarea"
-    placeholder="请输入备注"
-    autosize
-    border="{{ false }}"
-  />
+/> -->
+<form bindsubmit="btnSub">
+  <view class="container1">
+    <van-cell-group>
+    <van-field
+      name="mission"
+      size="large"
+      value="{{ message }}"
+      label="任务"
+      type="textarea"
+      placeholder="请输入你的任务"
+      autosize
+      border="{{ false }}"
+    />
   </van-cell-group>
-</view>
+  </view>
 
-<van-button round type="primary" size="large" color="#CCBE97">确定</van-button>
+  <view class="container2">
 
+  <van-cell title="开始时间" is-link bind:click="showPopup_start_date" value="{{ showtime1 }}"/>
+  <van-popup show="{{ show1 }}" round position="bottom" is-link bind:close="onClose1">
+    <input name="startTime" value="{{ showtime1 }}"></input>
+    <van-datetime-picker
+    type="time"
+    value="{{ currentDate }}"
+    min-hour="{{ minHour }}"
+    max-hour="{{ maxHour }}"
+    bind:input="onInput"
+    bind:change="bindDataChange1"
+    bind:confirm="confirm1"
+    bind:cancel="cancel1"
+  />
+  </van-popup>
+
+  <van-cell title="结束日期" is-link bind:click="showPopup_end_date" value="{{ showtime2 }}"/>
+  <van-popup show="{{ show2 }}" round position="bottom" is-link bind:close="onClose2" >
+    <input name="endTime" value="{{ showtime2 }}"></input>
+    <van-datetime-picker
+    type="time"
+    value="{{ currentDate }}"
+    min-hour="{{ minHour }}"
+    max-hour="{{ maxHour }}"
+    bind:input="onInput"
+    bind:confirm="confirm2"
+    bind:cancel="cancel2"
+  />
+  </van-popup>
+
+
+  <van-cell title="打卡时间" is-link bind:click="showPopup_clock" value="{{ showtime3 }}"/>
+  <van-popup show="{{ show3 }}" round position="bottom" is-link bind:close="onClose3" >
+    <input name="punchTime" value="{{ showtime3 }}"></input>
+    <van-datetime-picker
+    type="time"
+    value="{{ currentDate }}"
+    min-hour="{{ minHour }}"
+    max-hour="{{ maxHour }}"
+    bind:input="onInput"
+    bind:confirm="confirm3"
+    bind:cancel="cancel3"
+  />
+  </van-popup>
+
+  <van-cell title="提醒时间" is-link bind:click="showPopup_remind" value="{{ showtime4 }}"/>
+  <van-popup show="{{ show4 }}" round position="bottom" is-link bind:close="onClose4" >
+    <input name="remindTime" value="{{ showtime4 }}"></input>
+    <van-datetime-picker
+    type="time"
+    value="{{ currentDate }}"
+    min-hour="{{ minHour }}"
+    max-hour="{{ maxHour }}"
+    bind:input="onInput"
+    bind:confirm="confirm4"
+    bind:cancel="cancel4"
+  />
+  </van-popup>
+  </view>
+  <view class="container3">
+    <van-cell-group>
+    <van-field
+      name="remark"
+      size="large"
+      value="{{ message }}"
+      label="备注"
+      type="textarea"
+      placeholder="请输入备注"
+      autosize
+      border="{{ false }}"
+    />
+    </van-cell-group>
+  </view>
+
+  <button round type="primary" size="large" color="#CCBE97" form-type="submit" bindtap="jmpIndex">确定</button>
+</form>

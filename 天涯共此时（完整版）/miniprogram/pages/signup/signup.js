@@ -1,3 +1,5 @@
+const db=wx.cloud.database()//连接数据库
+
 Page({
 
   /**
@@ -7,12 +9,31 @@ Page({
     fileList: [],
     radio: '1',
   },
+
   //性别选择
   onChange(event) {
     this.setData({
       radio: event.detail,
     });
   },
+
+  btnSub(res){
+    var sex=res.detail.value.sex;
+    var username=res.detail.value.username;
+    var password=res.detail.value.password;
+    db.collection("user").add({
+      data:{
+        sex:sex,
+        username:username,
+        password:password
+      }
+    }).then(res=>{
+      console.log(res)
+    })
+    // console.log(sex,username,password)
+  },
+
+
 
   //上传头像
   afterRead(event) {

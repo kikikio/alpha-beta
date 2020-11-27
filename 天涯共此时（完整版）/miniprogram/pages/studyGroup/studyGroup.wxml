@@ -1,0 +1,9 @@
+<image src='../../images/3.png'></image>
+<view class="space"></view>
+<view class="container1">
+
+</view>
+<van-divider contentPosition="center">文本</van-divider>
+<view class="container2">
+
+</view>
