@@ -1,0 +1,21 @@
+<van-search left-icon="add" value="{{ value }}" placeholder="请输入你的小组类型" />
+
+  <view class="container1">
+    <van-button round size="small" type="default" >学习+</van-button>
+    <van-button round size="small" type="default">健身+</van-button>
+    <van-button round size="small" type="default">考研+</van-button>
+  </view>
+  <view class="container2">
+    <van-button round size="small" type="default">饮食+</van-button>
+    <van-button round size="small" type="default">起床+</van-button>
+    <van-button round size="small" type="default">阅读+</van-button>
+  </view>
+
+<view class="container">
+  <view>宣言</view>
+</view>
+  <van-search left-icon="volume" value="{{ value }}" placeholder="请输入你的小组宣言" /> 
+
+  <view class="buildGroup" bindtap="buildnewGroup">
+    <van-button type="primary" block round color="#CCBE97">新建小组</van-button>
+  </view>

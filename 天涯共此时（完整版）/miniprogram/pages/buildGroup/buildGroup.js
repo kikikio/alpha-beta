@@ -1,4 +1,4 @@
-// pages/1/1.js
+// miniprogram/pages/buildGroup/buildGroup.js
 Page({
 
   /**

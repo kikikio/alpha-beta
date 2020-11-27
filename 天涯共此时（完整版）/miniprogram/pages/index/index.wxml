@@ -48,7 +48,7 @@
   </view>
   <view class="container_1">
     <view class="my_mission"><van-icon name="friends" size="22px"/>计划组</view>
-    <view class="add"><van-icon name="plus" size="15px"/>添加</view>
+    <view class="add" bindtap="addGroup"><van-icon name="plus" size="15px"/>添加</view>
   </view>
 
   <van-tabs animated>
