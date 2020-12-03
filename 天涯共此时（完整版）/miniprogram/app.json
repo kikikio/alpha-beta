@@ -1,50 +1,30 @@
 {
   "pages": [
-<<<<<<< HEAD
-     "pages/index/index", 
+
+     "pages/signup/signup",
+    "pages/index/index", 
+    "pages/addMission/addMission",
     "pages/selectRole/selectRole",
     "pages/studyGroup/studyGroup",
     "pages/addGroup/addGroup",
-=======
-    
->>>>>>> upstream/main
     "pages/me/me",
-    "pages/setting/index",
+    "pages/setting/index", 
     "pages/message/message",
     "pages/account/account",
     "pages/person/person",
-<<<<<<< HEAD
-=======
-    "pages/selectRole/selectRole",
->>>>>>> upstream/main
     "pages/note/note",
     "pages/release/release",
-    "pages/signin/signin",
-    "pages/signup/signup",
-<<<<<<< HEAD
+     "pages/signin/signin",   
+    "pages/logs/logs",
     "pages/sq_index/index",
     "pages/tomato/tomato",
     "pages/content/content",
     "pages/msg/msg",
     "pages/mpp/mpp",
-    "pages/logs/logs",
+
     "pages/Gmsg/Gmsg",
     "pages/logss/logs",
     "pages/buildGroup/buildGroup"
-=======
-    "pages/index/index",
-    "pages/1/1",
-    "pages/2/2",
-    "pages/CreateGroup/index",
-    "pages/sq_index/index",
-    "pages/tomato/tomato",
-    "pages/content/content",
-    "pages/DetailsOfInform/DetailsOfInform",
-    "pages/MyPersonalPage/MyPersonalPage",
-    "pages/logs/logs",
-    "pages/Inform/Inform",
-    "pages/logss/logs"
->>>>>>> upstream/main
   ],
   "window": {
     "backgroundTextStyle": "light",

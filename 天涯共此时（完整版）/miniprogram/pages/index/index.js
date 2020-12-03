@@ -1,3 +1,5 @@
+const db=wx.cloud.database()//连接数据库
+
 Page({
 
   /**
@@ -5,6 +7,8 @@ Page({
    */
   data: {
     active: 0,
+    dataObj1: "",
+    dataObj2: "",
   },
   onChange(event) {
     this.setData({ active: event.detail });
@@ -13,7 +17,42 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    db.collection("plan_db").get().then(res=>{
+      this.setData({
+        dataObj1:res.data
+      })
+    });
+
+    db.collection("plan_db").watch({
+      onChange:res=>{
+        this.setData({
+          dataObj1:res.docs
+        })
+      },
+      onError:err=>{
+        console.log(err)
+      }
+
+    });
+
+    db.collection("plan_db_fit").get().then(res=>{
+      this.setData({
+        dataObj2:res.data
+      })
+    });
+
+    db.collection("plan_db_fit").watch({
+      onChange:res=>{
+        this.setData({
+          dataObj2:res.docs
+        })
+      },
+      onError:err=>{
+        console.log(err)
+      }
+
+    });
+
   },
 
   /**
@@ -27,7 +66,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+      this.onLoad()
   },
 
   /**
@@ -64,9 +103,14 @@ Page({
   onShareAppMessage: function () {
     
   },
-  turnto:function(){
+  turnto1:function(){
     wx.navigateTo({
       url: '../logs/logs',
+    })
+  },
+  turnto2:function(){
+    wx.navigateTo({
+      url: '../addMission/addMission',
     })
   },
   addGroup:function(){

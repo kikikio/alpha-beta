@@ -166,30 +166,28 @@ Page({
 
     var openid = this.data.openid
     
-    db.collection("plan_db").where({
+    db.collection("plan_db_fit").where({
       _openid:openid
     }).get().then(res=>{
       var data1 = res.data[0];
       this.setData({
         id:data1._id
       });
-
-      db.collection("plan_db").doc(this.data.id).update({
-        data:{
-          mission:mission,
-          startTime:startTime,
-          endTime:endTime,
-          punchTime:punchTime,
-          remindTime:remindTime,
-          remark:remark
-        }
-      }).then(res=>{
-        console.log(res);
-        wx.hideLoading()
-      });
-
+        db.collection("plan_db_fit").doc(this.data.id).update({
+          data:{
+            mission:mission,
+            startTime:startTime,
+            endTime:endTime,
+            punchTime:punchTime,
+            remindTime:remindTime,
+            remark:remark
+          }
+        }).then(res=>{
+          console.log(res);
+          wx.hideLoading()
+        });
     })
-
+    console.log(this.data.id);
   },
 
 })
