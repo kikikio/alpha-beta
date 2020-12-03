@@ -5,10 +5,10 @@
     </view>
     <view class="picture">
       <view class="picture1">
-        图片1
+        <image src='../../images/v2_pptx0z.png'></image>
       </view>
       <view class="picture2">
-        图片2
+        <image src='../../images/v2_pq42gb.png'></image>
       </view>
     </view>
     <view class="discription">
@@ -23,10 +23,10 @@
     </view>
     <view class="picture">
       <view class="picture1">
-        图片1
+        <image src='../../images/v2_pptx86.png'></image>
       </view>
       <view class="picture2">
-        图片2
+        <image src='../../images/v2_pptv7e.png'></image>
       </view>
     </view>
     <view class="discription">

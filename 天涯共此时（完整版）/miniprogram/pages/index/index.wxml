@@ -21,38 +21,40 @@
   </view>
   <view class="container_1">
     <view class="my_mission" bindtap="Go2Tomato"><van-icon name="underway" size="22px"/>我的任务</view>
-    <view class="add" bindtap="turnto">
+    <!-- <view class="add" bindtap="turnto">
       <navigator  url="pages/logs/logs" open-type="switchTab">
         <van-icon name="plus" size="15px"/>添加
       </navigator>
-    </view>
+    </view> -->
   </view>  
+  <view class="add_mission">
+    <view class="add_study" bindtap="turnto1">
+      <navigator  url="pages/logs/logs" open-type="switchTab">
+        <van-icon name="plus" size="15px"/>添加学习任务
+      </navigator>
+    </view>
+    <view class="add_fit" bindtap="turnto2">
+      <navigator  url="pages/logs/logs" open-type="switchTab">
+        <van-icon name="plus" size="15px"/>添加健身任务
+      </navigator>
+    </view>
+  </view>
+
   <van-tabs animated>
     <van-tab title="学习任务">
-      <text>
-        1、背5万个单词\n
-        2、复习软件工程\n
-        3、阅读构建之法
-      </text>
+      <text wx:for="{{dataObj1}}" wx:key="index">{{item.mission}}</text>
     </van-tab>
     <van-tab title="健身任务">
-      <text>
-      1、对空拳击5万次\n
-      2、跑操500圈\n
-      3、躺在床上刷抖音
-      </text>
+      <text wx:for="{{dataObj2}}" wx:key="index">{{item.mission}}</text>
     </van-tab>
   </van-tabs>  
+
   <view class="container">
   <view class="today_mission">共享计划组</view>
   </view>
   <view class="container_1">
     <view class="my_mission"><van-icon name="friends" size="22px"/>计划组</view>
-<<<<<<< HEAD
     <view class="add" bindtap="addGroup"><van-icon name="plus" size="15px"/>添加</view>
-=======
-    <view class="add" bindtap="AddGroup"><van-icon name="plus" size="15px"/>添加</view>
->>>>>>> upstream/main
   </view>
 
   <van-tabs animated>

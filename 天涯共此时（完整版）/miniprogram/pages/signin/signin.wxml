@@ -6,41 +6,45 @@
     </navigator>
   </view>
 </view> -->
+<form bindsubmit="btnSub">
+  <view class="container_2">
+    <van-image
+    round
+    width="10rem"
+    height="10rem"
+    src="https://img.yzcdn.cn/vant/cat.jpeg"
+  />
+  </view>
 
-<view class="container_2">
-  <van-image
-  round
-  width="10rem"
-  height="10rem"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
-/>
-</view>
+  <view class="container_3">
+    <van-cell-group>
+      <van-field
+        name="username"
+        value="{{ username }}"
+        required
+        clearable
+        label="昵称"
+        icon="question-o"
+        placeholder="请输入昵称"
+        bind:click-icon="onClickIcon"
+      />
 
-<view class="container_3">
-  <van-cell-group>
-    <van-field
-      value="{{ username }}"
-      required
-      clearable
-      label="昵称"
-      icon="question-o"
-      placeholder="请输入昵称"
-      bind:click-icon="onClickIcon"
-    />
-
-    <van-field
-      value="{{ password }}"
-      type="password"
-      label="学号"
-      placeholder="请输入学号"
-      required
-      border="{{ false }}"
-    />
-  </van-cell-group>
-</view>
+      <van-field
+        name="password"
+        value="{{ password }}"
+        type="password"
+        label="学号"
+        placeholder="请输入学号"
+        required
+        border="{{ false }}"
+      />
+    </van-cell-group>
+  </view>
 
 
-<van-divider />
-<view class="container_4">
-  <van-button round type="primary" size="large" color="#CCBE97" bindtap="Go2MainPage">Sign in</van-button>
-</view>
+  <van-divider />
+  <view class="container_4">
+    <button round type="primary" size="large" background-color="#CCBE97" bindtap="Go2MainPage" form-type="submit">Sign in</button>
+  </view>
+</form>
+
