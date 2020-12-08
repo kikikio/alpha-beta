@@ -17,7 +17,7 @@
   padding: 20px;
   margin: 10px; 
 }
-/* .container:nth-child(2n)
+.container:nth-child(2n)
 {
   background: rgb(241, 173, 224);
 }
@@ -25,7 +25,7 @@
 .container:nth-child(3n)
 {
   background: rgb(145, 203, 241);
-} */
+}
 
 
 .content{
@@ -55,10 +55,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.refrence image{
-  width: 20px;
-  height: 20px;
 }
 
 .addbutton{
@@ -125,10 +121,6 @@
   width: 25px;
   height: 25px;
 }
-.release-title {
-  border-radius: 5%;
-  margin-bottom: 10px;
-}
 .release-content{
   height: 250px;
 }
@@ -140,14 +132,6 @@
   margin-bottom: 10 px;
 }
 
-.relsase-picture image{
-  width: 50px;
-  height: 50px;
-}
-.uploadedpic image{
-  width: 70px;
-  height: 70px;
-}
 
 
 /* 定义字体 */

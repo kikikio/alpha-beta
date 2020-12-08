@@ -1,4 +1,7 @@
 // Inform.js
+const db = wx.cloud.database()
+const app = getApp();
+
 Page({
   // 顶栏
   onClickLeft() {
@@ -8,14 +11,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    dataObj:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // db.collection("Inform").get()
+    // .then(res=>{
+    //   this.setData({
+    //     dataObj:res.data
+    //   })
+    // })
 
+    db.collection("Inform").get({    //.where(place:"中国")
+      success:res=>{
+        console.log(res.data)
+        this.setData({
+          dataObj:res.data
+        })
+      }
+    })
   },
 
   /**
@@ -29,7 +46,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**

@@ -1,14 +1,17 @@
-<view class="container">
-  <!-- <van-cell-group class="container1">
-    <van-cell title="个人资料" is-link />
-  </van-cell-group> -->
-  <van-cell-group class="container1" size="large">
-    <van-cell title="个人资料" is-link bindtap="Go2Person" />
-    <van-cell title="账号与安全" is-link bindtap="Go2Account" />
-    <van-cell title="消息与提醒" is-link  bindtap="Go2Message" />
-    <van-cell title="清除缓存" is-link bind:click="showup"/>
-  </van-cell-group>
-</view>
+<van-nav-bar
+  title="设置"
+  left-text="返回"
+  left-arrow
+  bind:click-left="onClickLeft"
+/>
+<van-cell-group class="container1" size="large">
+  <van-cell title="个人资料" label="　" is-link bindtap="Go2Person" />
+  <van-cell title="账号与安全" label="　" is-link bindtap="Go2Account" />
+  <van-cell title="消息与提醒" label="　" is-link  bindtap="Go2Message" />
+  <van-cell title="清除缓存" label="　" bind:click="click2WipeCache"/>
+</van-cell-group>
+<text>\n\n\n\n</text>
+<van-button round color="#AD974A" type="info" size="normal" bindtap="Go2selectRole">退出登录</van-button>
 
 
 

@@ -1,10 +1,10 @@
 {
   "pages": [
-
-     "pages/signup/signup",
-    "pages/index/index", 
-    "pages/addMission/addMission",
     "pages/selectRole/selectRole",
+    "pages/addMission/addMission",
+    "pages/logs/logs",        
+    "pages/signup/signup",
+    "pages/index/index", 
     "pages/studyGroup/studyGroup",
     "pages/addGroup/addGroup",
     "pages/me/me",
@@ -15,13 +15,11 @@
     "pages/note/note",
     "pages/release/release",
      "pages/signin/signin",   
-    "pages/logs/logs",
     "pages/sq_index/index",
     "pages/tomato/tomato",
     "pages/content/content",
     "pages/msg/msg",
     "pages/mpp/mpp",
-
     "pages/Gmsg/Gmsg",
     "pages/logss/logs",
     "pages/buildGroup/buildGroup"

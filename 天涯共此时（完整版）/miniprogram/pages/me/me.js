@@ -1,21 +1,21 @@
-//me.js
-//获取应用实例
-const app = getApp()
+const db = wx.cloud.database()
+const app = getApp();
+var data = app.data;
 
 Page({
   //底栏
-  data: {
-    active: 0,
-  },
   onChange(event) {
     this.setData({ active: event.detail });
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logss/logs'
-    })
+  data: {
+      active:0,
   },
+  data: {
+    confirm:false,
+    dataObj:[],
+  },
+
+  //监听页面加载
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -43,6 +43,16 @@ Page({
         }
       })
     }
+
+    //读个人信息数据
+    db.collection("personalData").get({    //.where(place:"中国")
+      success:res=>{
+        console.log(res.data)
+        this.setData({
+          dataObj:res.data
+        })
+      }
+    })
   },
   getUserInfo: function(e) {
     console.log(e)
@@ -66,5 +76,11 @@ Page({
     wx.navigateTo({
       url: '../setting/index',
     })
+  },
+  Go2selectRole:function(){
+    wx.navigateTo({
+      url: '../selectRole/selectRole',
+    })
   }
 })
+

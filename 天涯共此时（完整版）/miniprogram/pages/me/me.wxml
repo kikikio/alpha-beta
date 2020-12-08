@@ -1,61 +1,46 @@
-<!--me.wxml-->
-<import>import {canIUse} from '../../dist/common/version.js'</import>
-<!--底栏-->
-<!-- <van-tabbar
-  active="{{ active }}"
-  active-color="#AD974A"
-  inactive-color="#000"
-  bind:change="onChange"
->
-  <van-tabbar-item icon="home-o">首页</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">广场</van-tabbar-item>
-  <van-tabbar-item icon="https://b.yzcdn.cn/vant/icon-demo-1126.png">我</van-tabbar-item>
-</van-tabbar> -->
-
+<!--MyPersonalPage.wxml-->
 <view class="view_contain">
-
-  <view class="view_1">
-    <view class="userinfo">
+  <view class= "headBar">
+    <view class="topBar">
+    </view>
+    <view class="userinfo" wx:for="{{dataObj}}">
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
       <block wx:else>
-        <div>
+        <div>       
           <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          <text class="userinfo-nickname">{{userInfo.nickName}}　　</text>
+          <van-tag round type="primary" color="#AD974A" >lv.{{item.level}}</van-tag>
         </div>
       </block>
-      <van-button  class= "anniu"  style="width:50px" bindtap="Go2Mpp"> > </van-button>
+      
     </view>
-    
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
+    <view class="details" wx:for="{{dataObj}}">
+      <text class="head-name">　{{item.school}}　{{item.dept}}\n</text>
+      <text class="content-title">　{{item.loveHim}}</text>
+      <text class="head-date">人关注他　</text>
+      <text class="content-title">{{item.heLoves}}</text>
+      <text class="head-date">关注他的人</text>
     </view>
-  
   </view>
-
-  <view class="view_1p5">
-  </view>
-
-  <view class="view_2">
+  <button  class= "arrow" bindtap="Go2Mpp" > > </button>
+  <view class="body">
     <div>
-      <text class="usedTools">常用工具\n\n</text>
+      <text class="head-name">\n常用工具\n\n\n</text>
     </div>
-    <van-button icon="chat-o" type="default" bindtap="Go2Gmsg">评论</van-button>
-    <text class="usedTools">\n\n</text>
-    <van-button icon="question-o" type="default" >帮助与反馈</van-button>
-    <text class="usedTools">\n\n</text>
-    <van-button icon="setting-o" type="default" bindtap="Go2Setting">系统设置</van-button>
-    <text class="usedTools">\n\n</text>
-  </view>
-
-  <view class="view_3">
-
-    <van-button round type="primary" size="large" color="black" plain>退出登录</van-button>
-  </view>
-
-<view class="view_3p5">
-  </view>
-
-  <view class="view_4">
-    
+    <van-row>
+      <van-col span="8">
+        <van-button icon="chat-o" type="default" bindtap="Go2Gmsg">评论内容</van-button>
+      </van-col>
+      <van-col span="8">
+        <van-button icon="question-o" type="default" >帮助与反馈</van-button>
+      </van-col>
+      <van-col span="8">
+        <van-button icon="setting-o" type="default" bindtap="Go2Setting">系统设置</van-button>
+      </van-col>
+    </van-row>
+    <text>\n\n\n\n</text>
+    <view class="logOut">
+      <van-button round color="#AD974A" size="large" type="normal" bindtap="Go2selectRole">退出登录</van-button>
+    </view>
   </view>
 </view>

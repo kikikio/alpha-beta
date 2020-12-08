@@ -1,6 +1,7 @@
 //MyPersonalPage.js
-//获取应用实例
-const app = getApp()
+const db = wx.cloud.database()
+const app = getApp();
+var data = app.data;
 
 Page({
   //底栏
@@ -10,10 +11,62 @@ Page({
   onChange(event) {
     this.setData({ active: event.detail });
   },
-  //搜索框
   data: {
-    value: '',
+    confirm:false,
+    dataObj:[],
+    datalist:[]
   },
+
+  closeit:function(){
+    this.setData({
+      confirm:false
+    })
+  },
+
+  releaseit:function(){
+    this.setData({
+      confirm:false
+    })
+    wx.showToast({
+      title: '发布成功',
+    })
+  },
+
+  noteit:function(){
+    wx.navigateTo({
+      url: '/pages/note/note',
+    })
+
+  },
+
+  releaseplan:function(res){
+    this.setData({
+      confirm:true
+    })
+  },
+
+
+
+  onClick()
+  {
+    wx.showToast({
+      title: 'Success',
+    })
+  },
+
+  
+  BtnSubmit(res){
+    var resVlu=res.detail.value
+    console.log(resVlu)
+
+    db.collection("datalist-squre").add({
+        data:resVlu
+    }).then(res=>{
+      console.log(res)
+    })
+  },
+
+  //搜索框
   onChange(e) {
     this.setData({
       value: e.detail,
@@ -23,6 +76,9 @@ Page({
     Toast('搜索' + this.data.value);
   },
   onClick() {
+    wx.showToast({
+      title: 'Success',
+    })
     Toast('搜索' + this.data.value);
   },
   //事件处理函数
@@ -31,6 +87,8 @@ Page({
       url: '../logs/logs'
     })
   },
+
+  //监听页面加载
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -58,6 +116,24 @@ Page({
         }
       })
     }
+
+    //读个人信息数据
+    db.collection("personalData").get({    //.where(place:"中国")
+      success:res=>{
+        console.log(res.data)
+        this.setData({
+          dataObj:res.data
+        })
+      }
+    })
+
+    //读历史计划数据
+    db.collection("datalist-squre").get()
+    .then(res=>{
+      this.setData({
+        datalist:res.data
+      })
+    })
   },
   getUserInfo: function(e) {
     console.log(e)
@@ -66,6 +142,11 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  releaseplan:function(){
+    wx.navigateTo({
+      url: '/pages/release/release',
+    })
+  },
 })
 

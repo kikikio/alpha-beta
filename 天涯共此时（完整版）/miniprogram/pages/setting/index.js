@@ -1,5 +1,10 @@
 Page({
-
+  onClickLeft() {
+    wx.showToast({ title: '点击返回', icon: 'none' });
+  },
+  click2WipeCache() {
+    wx.showToast({ title: '已释放56M内存', icon: 'none' });
+  },
   /**
    * 页面的初始数据
    */
@@ -12,7 +17,11 @@ Page({
   onLoad: function (options) {
     
   },
-
+  Go2logss: function() {
+    wx.navigateTo({
+      url: '../logss/logs'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -74,6 +83,11 @@ Page({
   Go2Account:function(){
     wx.navigateTo({
       url: '../account/account',
+    })
+  },
+  Go2selectRole:function(){
+    wx.navigateTo({
+      url: '../selectRole/selectRole',
     })
   }
 })
