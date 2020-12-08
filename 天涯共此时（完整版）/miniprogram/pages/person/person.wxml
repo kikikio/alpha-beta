@@ -1,48 +1,51 @@
-<van-cell-group class="container1">
-    <van-cell  title="修改头像"  >
-      <van-image
-        round
-        width="50rpx"
-        height="50rpx"
-        src="https://img.yzcdn.cn/vant/cat.jpeg"
+<form bindsubmit="sub">
+  <van-cell-group class="container1">
+      <van-cell  title="头像"  >
+        <van-image
+          round
+          width="70rpx"
+          height="70rpx"
+          src="https://img.yzcdn.cn/vant/cat.jpeg"
+        />
+      </van-cell>
+      <van-field
+        name="name"
+        value="{{ dataObj.name }}"
+        label="昵称"
+        placeholder="未设置昵称"
+        input-align="right"
       />
-    </van-cell>
-    <van-cell title="修改昵称" value="猫"   />
-    <van-cell title="设置性别" >
-      <van-radio-group value="{{ radio }}" bind:change="onChange" >
-        <van-radio name="1">男</van-radio>
-        <van-radio name="2">女</van-radio>
-      </van-radio-group>
-    </van-cell>
-    <van-cell title="所在地区" value="中国" />
-    <van-cell title="本科院校" value="福州大学" />
-    <van-cell title="本科专业" value="计算机系"   />
-    <van-cell title="考研年份" bind:click="onTap" value="{{time}}" is-link/>
-    <van-cell title="报考院校" value="哥伦比亚大学" />
+      <van-cell title="设置性别" >
+        <van-radio-group value="{{dataObj.radio}}" bind:change="onChange" >
+          <van-radio name="1">男</van-radio>
+          <van-radio name="2">女</van-radio>
+        </van-radio-group>
+      </van-cell>
+      <van-field
+        name="place"
+        value="{{ dataObj.place }}"
+        label="所在地区"
+        placeholder="未设置地区"
+        input-align="right"
+      />
+      <van-field
+        name="school"
+        value="{{ dataObj.school }}"
+        label="本科院校"
+        placeholder="未设置院校"
+        input-align="right"
+      />
+      <van-field
+        name="dept"
+        value="{{ dataObj.dept }}"
+        label="本科专业"
+        placeholder="未设置系别"
+        input-align="right"
+        type="textarea"
+      />
   </van-cell-group>
-<van-cell-group>
-  <van-field
-    value="{{ message }}"
-    label="个性签名"
-    type="textarea"
-    placeholder="请输入"
-    autosize
-    border="{{ false }}"
-  />
-</van-cell-group>
-
-<van-popup 
-    show="{{ show }}" 
-    position="bottom"
-    custom-style="height: 40%;"
-    bind:close="onClose"
-    round
-    >
-    <van-datetime-picker
-      type="year-month"
-      title="选择时间"
-      value="{{ currentDate }}"
-      bind:input="onInput"
-    />
-  </van-popup>
+  <view class="commit">
+    <van-button round color="#AD974A" type="primary" block form-type="submit">保存修改</van-button>
+  </view>
+</form>
 

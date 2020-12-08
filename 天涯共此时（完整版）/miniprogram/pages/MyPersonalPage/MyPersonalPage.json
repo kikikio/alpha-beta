@@ -2,6 +2,8 @@
   "usingComponents": {
     "van-image": "../../dist/image/index",
     "van-tag": "../../dist/tag/index",
-    "van-search": "../../dist/search/index"
+    "van-search": "../../dist/search/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index"
   }
 }

@@ -38,6 +38,9 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.content{
+  width: 100%;
+}
 .content image
 {
   width: 100%;
@@ -64,18 +67,58 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  align-content: center;
+}
+.dianzan image{
+  width: 25px;
+  height: 25px;
 }
 /* 我的评论样式设置 */
 .mycomment{
   position: fixed;
-  bottom: 20px;
+  bottom: 5px;
   margin-left: 25px;
-}
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} 
 .comment-box{
+  height: 50px;
   border: 1px solid white;
   border-radius: 5%;
   background: white;
-  width: 300px;
+  width: 250px;
+  background-color: sandybrown;
+}
+.tap{
+  margin-left: 10px;
+}
+.btn {
+  width: 75px;
+  height: 50px;
+  margin-top: 0px;
+  background-color: beige;
+  color: white;
+}
+/* .myreset{
+  width: 50px;
+  position: fixed;
+  bottom: 5px;
+  margin-right: 25px;
+} */
+.clear{
+  background: pink;
+}
+/*  
+.myreset button{
+  margin-right: 40px;
+  position: fixed;
+  bottom: 20px;
+  right:25px;
+  background-color: seagreen;
+  width: 2px;
+  height: 2px;
 }
 /* 对计划内容的字体样式进行设置 */
 .head-name{

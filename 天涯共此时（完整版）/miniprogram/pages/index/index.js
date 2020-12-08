@@ -9,6 +9,8 @@ Page({
     active: 0,
     dataObj1: "",
     dataObj2: "",
+    openid:"",
+    id:"",
   },
   onChange(event) {
     this.setData({ active: event.detail });
@@ -17,11 +19,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
+
     db.collection("plan_db").get().then(res=>{
       this.setData({
         dataObj1:res.data
       })
-    });
+    })
+
 
     db.collection("plan_db").watch({
       onChange:res=>{

@@ -5,106 +5,9 @@ page{
   height: 100%;
 }
 
-/* 个人主页字体 */
-.mpp1{
-  font-family: ""微软雅黑"";
-  position: absolute;
-  display: flex;
-  font-size: large;
-  font-weight: 900;
-  top: 2%;
-  left: 39%;
-}
-
 .view_contain {
   width: 100%;
   height: 100%;
-}
-
-.top1{
-  position: relative;
-  width: 100%;
-  height: 5%;
-}
-/* 头像所在view框 */
-.userinfo {
-  position: relative;
-  display: flex;
-  left: 4%;
-  width: 90%;
-  height: 45%;
-  background-color: rgb(255, 255, 255);
-  border-top-left-radius: 50rpx;
-  border-top-right-radius: 50rpx;
-  flex-direction: column;
-}
-.view_1 {
-  position: relative;
-  left: 4%;
-  width: 90%;
-  height: 30%;
-  background-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 50rpx;
-  border-bottom-right-radius: 50rpx;
-}
-
-.view_0{
-  width: 100%;
-  height: 35%;
-  background-image: url(https://goss.veer.com/creative/vcg/veer/800water/veer-161251290.jpg);
-  background-repeat: repeat;
-}
-
-.gold{
-  margin:10px;
-  padding: 5px;
-  font-size: 13px;
-  font-family: "微软雅黑";
-  color: #AD974A;
-}
-
-.black{
-  margin:0px;
-  font-size: 15px;
-  font-family: "微软雅黑";
-  color: #000000;
-  font-weight: 900;
-}
-
-.gray{
-  padding: 5px;
-  font-size: 13px;
-  font-family: "微软雅黑";
-  color: #91918d;
-}
-
-.content_text{
-  font-size: 10px;
-  font-family: "微软雅黑";
-  color: #000000;
-
-}
-
-.view_2 {
-  width: 100%;
-  height: 10%;
-  background: #98dd18;
-}
-
-.title{
-  width: 100%;
-  height: 3%;
-}
-
-.content{
-  width: 100%;
-  height: 25%;
-}
-
-.view_3p5{
-  width: 100%;
-  height: 1px;
-  background: rgb(204, 204, 204);
 }
 
 .userinfo-avatar {
@@ -131,4 +34,127 @@ page{
 }
 .usermotto {
   margin-top: 200px;
+}
+
+/* 个人主页字体 */
+.mpp{
+  position: absolute;
+  display: flex;
+  font-size: large;
+  font-weight: 900;
+  top: 2%;
+  left: 39%;
+}
+
+.mppBar{
+  width: 100%;
+  height: 35%;
+  background-image: url(https://goss.veer.com/creative/vcg/veer/800water/veer-161251290.jpg);
+  background-repeat: repeat;
+}
+
+.topBar{
+  position: relative;
+  width: 100%;
+  height: 5%;
+}
+/* 头像所在view框 */
+.userinfo {
+  position: relative;
+  display: flex;
+  left: 4%;
+  width: 90%;
+  height: 45%;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  flex-direction: column;
+}
+.details {
+  position: relative;
+  left: 4%;
+  width: 90%;
+  height: 30%;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  height: 10%;
+}
+
+.main
+{
+  box-sizing: border-box;
+  padding: 30rpx;
+  background: rgb(248, 248, 248);
+  display: flex;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px; 
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.head-another{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.content-head{
+  margin-top: 2px;
+}
+.content-title{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.content-image{
+  margin-bottom: 15px;
+}
+.content-image image{
+  width: 200px;
+  height: 200px;
+}
+.refrence{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.addbutton{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 80px;
+  right: 20px;
+} 
+
+
+/* 对字体样式进行定义 */
+.head-name{
+  font-weight: bold;
+  font-size: medium;
+  color: #3f3f3f;
+}
+.head-date{
+  font-size: small;
+  color: #cecece;
+}
+.content-title{
+  color: #ccbe97;
+}
+.refrence text{
+  color: #ceced0;
+  font-size: small;
 }

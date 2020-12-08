@@ -1,32 +1,31 @@
 <!--MyPersonalPage.wxml-->
-
 <view class="view_contain">
-  <view class= "view_0">
-    <view class="top1">
+  <view class= "mppBar">
+    <view class="topBar">
     </view>
-    <view class="userinfo" >
+    <view class="userinfo" wx:for="{{dataObj}}" >
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
       <block wx:else>
         <div>       
           <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-          <text class="userinfo-nickname">{{userInfo.nickName}}　</text>
-          <van-tag round type="primary" color="#AD974A" >lv.10</van-tag>
+          <text class="userinfo-nickname">{{userInfo.nickName}}　　</text>
+          <van-tag round type="primary" color="#AD974A" >lv.{{item.level}}</van-tag>
         </div>
-        <text class="mpp1">个人主页</text>
+        <text class="mpp">个人主页</text>
       </block>
       <view class="usermotto">
         <text class="user-motto">{{motto}}</text>
       </view>
     </view>
-    <view class="view_1">
-        <text class="black">　福州大学　计算机系\n</text>
-        <text class="gold">2,334,712</text>
-        <text class="gray">人关注他　</text>
-        <text class="gold">20</text>
-        <text class="gray">关注他的人</text>
+    <view class="details" wx:for="{{dataObj}}">
+      <text class="head-name">　{{item.school}}　{{item.dept}}\n</text>
+      <text class="content-title">　{{item.loveHim}}</text>
+      <text class="head-date">人关注他　</text>
+      <text class="content-title">{{item.heLoves}}</text>
+      <text class="head-date">关注他的人</text>
     </view>
   </view>
-  <view class="view_2">
+  <view class="search">
     <van-search
       value="{{ value }}"
       label="历史计划"
@@ -39,48 +38,37 @@
       <view slot="action" bind:tap="onClick">搜索</view>
     </van-search>
   </view>
-  <view class="title">
-    <div>
-      <span>
-        <text>　</text>
-        <van-image
-          round
-          width="2rem"
-          height="2rem"
-          src="https://img.yzcdn.cn/vant/cat.jpeg"
-        />
-        <text>　me　　</text>
-        <van-tag color="#91918d">7小时前\n\n\n\n</van-tag>
-      </span>
-    </div>
-  </view>
-  <view class="content">
-    <text class="content_text">\n　　　　　#软件工程期末补考计划\n</text>
-    <text>　　　</text>
-    <van-image width="120" height="60" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+  <view class="main">
+    <navigator url="/pages/content/content">
+    <view class="container" wx:key="index" wx:for="{{datalist}}">
+      <view class="content">
+        <view class="head-image">
+              <van-image round width="2rem" height="2rem" src="{{item.userimage}}"/>
+        </view>
+        <view class="head-another ">
+              <view class="content-head">
+                <text class="head-name">{{item.username}}</text><text  space="ensp" class="head-date">{{item.releasetime}}</text>
+              </view>
+              <view class="content-title">
+                  <text class="plan-name">{{item.planname}}</text>
+              </view>
+              <view class="content-image">
+                <image src="{{item.images}}"></image>
+              </view>
+        </view>
+      </view>
+
+      <view class="refrence">
+        <van-icon name="like-o" /><text>{{item.numlike}}</text>
+        <van-icon name="star-o" /><text>{{item.numstar}}</text>
+        <van-icon name="chat-o" /><text>{{item.numchat}}</text>
+        <van-icon name="share-o" /><text>{{item.numshare}}</text>
+      </view>
+    </view>
+    </navigator>
   </view>
 
-  <view class="view_3p5">
-  </view>
-
-  <view class="title">
-    <div>
-      <span>
-        <text>　</text>
-        <van-image
-          round
-          width="2rem"
-          height="2rem"
-          src="https://img.yzcdn.cn/vant/cat.jpeg"
-        />
-        <text>　me　　</text>
-        <van-tag color="#91918d">7小时前\n\n\n\n</van-tag>
-      </span>
-    </div>
-  </view>
-  <view class="content">
-    <text class="content_text">\n　　　　　#软件工程期末补考计划\n</text>
-    <text>　　　</text>
-    <van-image width="120" height="60" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+  <view bindtap="releaseplan">
+    <image class="addbutton" src="/images/input.png"></image>
   </view>
 </view>

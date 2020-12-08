@@ -1,0 +1,78 @@
+/* 对整体布局进行定义 */
+.banner image{
+  width: 100%;
+}
+.main
+{
+  box-sizing: border-box;
+  padding: 30rpx;
+  background: rgb(248, 248, 248);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px; 
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.head-another{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.content-head{
+  margin-top: 2px;
+}
+.content-title{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.content-image{
+  margin-bottom: 15px;
+}
+.content-image image{
+  width: 200px;
+  height: 200px;
+}
+.refrence{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.addbutton{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 80px;
+  right: 20px;
+} 
+
+
+/* 对字体样式进行定义 */
+.head-name{
+  font-weight: bold;
+  font-size: medium;
+  color: #3f3f3f;
+}
+.head-date{
+  font-size: small;
+  color: #cecece;
+}
+.content-title{
+  color: #ccbe97;
+}
+.refrence text{
+  color: #ceced0;
+  font-size: small;
+}
+
+
+

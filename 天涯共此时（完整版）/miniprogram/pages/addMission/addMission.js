@@ -153,10 +153,13 @@ Page({
 
   //提交表单添加进数据库 
   btnSub(res){
-    wx.showLoading({
-      title: '添加成功✔',
-      mask:true
+    wx.showToast({
+      title: '添加成功',
     })
+    // wx.showLoading({
+    //   title: '添加成功✔',
+    //   mask:true
+    // })
     // var mission=res.detail.value.mission;
     // var remark=res.detail.value.remark;
 
@@ -184,7 +187,7 @@ Page({
           }
         }).then(res=>{
           console.log(res);
-          wx.hideLoading()
+          // wx.hideLoading()
         });
     })
     console.log(this.data.id);
