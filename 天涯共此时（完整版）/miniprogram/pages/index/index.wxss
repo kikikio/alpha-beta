@@ -41,11 +41,22 @@ image {
 .my_mission van-icon{
   color: #CCBE97;
 }
-.add {
+.add_study {
   font-size: 30rpx;
   display: flex;
   align-items: center;
 }
-.add van-icon{
+.add_study van-icon{
   color: #CCBE97;
+}
+.add_fit van-icon{
+  color: #CCBE97;
+}
+.add_mission {
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-between;
 }

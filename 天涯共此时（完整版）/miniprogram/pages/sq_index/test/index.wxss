@@ -1,0 +1,146 @@
+/* 对整体布局进行定义 */
+.banner image{
+  width: 100%;
+}
+.main
+{
+  box-sizing: border-box;
+  padding: 30rpx;
+  background: rgb(240, 240, 240);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px; 
+}
+.container:nth-child(2n)
+{
+  background: rgb(241, 173, 224);
+}
+
+.container:nth-child(3n)
+{
+  background: rgb(145, 203, 241);
+}
+
+
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.head-another{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.content-head{
+  margin-top: 2px;
+}
+.content-title{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.content-image{
+  margin-bottom: 15px;
+}
+.content-image image{
+  width: 200px;
+  height: 200px;
+}
+.refrence{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.addbutton{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 80px;
+  right: 20px;
+} 
+
+
+/* 对字体样式进行定义 */
+.head-name{
+  font-weight: bold;
+  font-size: medium;
+  color: #3f3f3f;
+}
+.head-date{
+  font-size: small;
+  color: #cecece;
+}
+.content-title{
+  color: #ccbe97;
+}
+.refrence text{
+  color: #ceced0;
+  font-size: small;
+}
+
+
+
+
+
+.mainanother{
+  bottom: 0px; 
+  position: fixed;
+  box-sizing: border-box;
+  border-radius: 5%;
+  width: 100%;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  background: rgb(217, 160, 235); 
+  height: 650px;
+
+}
+.containeranother{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 15px; 
+  height: 580px;
+}
+.release-close{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center ;
+}
+.closeimage image{
+  width: 25px;
+  height: 25px;
+}
+.release-content{
+  height: 250px;
+}
+.release-other{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 10 px;
+}
+
+
+
+/* 定义字体 */
+.release-note{
+  font-size: small;
+  color: #cecece;
+}
+.release-warn{
+  font-size: small;
+}
+
+

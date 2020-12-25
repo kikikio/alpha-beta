@@ -1,18 +1,22 @@
-<swiper class="banner" indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay interval="3000">
+<swiper class="banner" indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay interval="3000" circular>
   <swiper-item>
-    <image src="/images/v2_q8plnv.png" mode="widthFix"></image>
+    <image src="https://656e-env-develop-3gvh14q1229a4db0-1304275216.tcb.qcloud.la/image/v2_q8plnv.png?sign=9028bef2498855f13fe7bc9c0d5839df&t=1606403979" mode="widthFix"></image>
   </swiper-item>
   <swiper-item>
-    <image src="/images/v2_q8plo0.png"></image>
+    <image src="https://656e-env-develop-3gvh14q1229a4db0-1304275216.tcb.qcloud.la/image/v2_q8plo0.png?sign=85600d372dbe460cfd429877c6518d34&t=1606403946"></image>
   </swiper-item>
   <swiper-item>
-    <image src="/images/v2_q8plo5.png"></image>
+    <image src="https://656e-env-develop-3gvh14q1229a4db0-1304275216.tcb.qcloud.la/image/v2_q8plo5.png?sign=7fa138f750c0c6b2beba5ada24aa8fde&t=1606403915"></image>
   </swiper-item>
 </swiper>
 
+
+
 <view class="main">
-  <navigator url="/pages/content/content">
-  <view class="container" wx:key="index" wx:for="{{datalist}}">
+
+
+  <view class="container" wx:key="index" wx:for="{{datalist}}" >
+     <navigator  url="/pages/content/content?id={{item._id}}&index={{index}}"> 
     <view class="content">
       <view class="head-image">
             <van-image round width="2rem" height="2rem" src="{{item.userimage}}"/>
@@ -22,38 +26,72 @@
               <text class="head-name">{{item.username}}</text><text  space="ensp" class="head-date">{{item.releasetime}}</text>
             </view>
             <view class="content-title">
-                <text class="plan-name">{{item.planname}}</text>
+                <text class="plan-name">#{{item.title}}#</text>
             </view>
             <view class="content-image">
-              <image src="{{item.images}}"></image>
+              <image src="{{item.images[0]}}"></image>
             </view>
       </view>
     </view>
-
+    </navigator> 
     <view class="refrence">
-                <van-icon name="like-o" /><text>{{item.likenum}}</text>
-                <van-icon name="star-o" /><text>{{item.starnum}}</text>
-                <van-icon name="chat-o" /><text>{{item.chatnum}}</text>
-                <van-icon name="share-o" /><text>{{item.sharenum}}</text>
+          <image src="/images/like01.png" bindtap="updateData" data-id="{{item._id}}" data-idx="{{index}}" ></image><text>{{item.numlike}}</text>
+          <!-- <image src="/images/star01.png"></image><text>{{item.numstar}}</text> -->
+          <image src="/images/chat01.png"></image><text>{{item.numchat}}</text> 
     </view>
+
   </view>
-  </navigator>
+
 
 </view>
-
 
 
 <view bindtap="releaseplan">
   <image class="addbutton" src="/images/input.png"></image>
 </view>
 
+<view wx:if="{{confirm}}" class="mainanother"> 
+    <view class="containeranother">
+        <form bindsubmit="BtnSubmit">
+          <view class="release-close">
+            <view class="closeimage">
+              <image bindtap="closeit" src="/images/close.png"></image>
+            </view>
+            <view class="release-image">
+              <button bindtap="releaseit"  type="primary" form-type="submit" >发布</button>
+            </view>
+        </view>
+
+          <view class="release-title">
+              <input placeholder="请输入标题" name="title" ></input>
+          </view>
+          <view class="release-content">
+              <textarea placeholder="写下要发布的计划" name="content" ></textarea>
+          </view>
+          <view class="release-other">
+              <view class="release-note">
+                  <text>最多发布四张图片</text>
+              </view>
+              <view class="release-warn">
+                  <van-button bindtap="noteit" round size="small"  type="primary">发帖规范</van-button>
+              </view>
+          </view>
+        </form>
+
+        <view class="relsase-picture">
+          <image bindtap="uploadpic" src="/images/carema.png">
+          </image>
+        </view>
+        <view class="uploadedpic">
+          <image wx:for="{{imagelist}}"  wx:key="index" src="{{item}}"></image>
+        </view>
+    </view>
+</view>
 
 
 
 
 
-<!-- <van-tabbar active="{{ active }}" bind:change="onChange">
-  <van-tabbar-item name="home" icon="home-o">主页</van-tabbar-item>
-  <van-tabbar-item name="search" icon="search">广场</van-tabbar-item>
-  <van-tabbar-item name="setting" icon="setting-o">我的</van-tabbar-item>
-</van-tabbar> -->
+
+
+

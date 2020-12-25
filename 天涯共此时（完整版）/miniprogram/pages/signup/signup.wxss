@@ -57,3 +57,8 @@
   margin-top: 50rpx;
   margin-bottom: 50rpx;
 }
+
+.input {
+  border:5rpx solid #CCBE97;
+  margin: 15rpx;
+}

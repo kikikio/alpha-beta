@@ -1,18 +1,17 @@
 
-
 <view class="main">
 
 
-  <view class="container"> 
+  <view class="container" > 
     <view class="head">
       <view class="headone">
         <view class="headone-left">
           <view class="head-image">
-            <van-image round width="2.5rem" height="2.5rem" src="/images/v2_pptv7e.png"/>
+            <van-image round width="2.5rem" height="2.5rem" src="{{mainlist.userimage}}"/>
           </view>
           <view class="head-info">
-            <text class="head-name">我要上清华</text>
-            <text class="head-date">2020-12-21</text>
+            <text class="head-name">{{mainlist.username}}</text>
+            <text class="head-date">{{mainlist.releasetime}}</text>
           </view>
         </view>
         <view class="head-fork">
@@ -20,44 +19,59 @@
         </view>
       </view>
       <view class="headtwo">
-          <text class="plan-name">#清华大学考研计划#</text>
+          <text class="plan-name">{{mainlist.title}}{{uid}}</text>
       </view>
     </view> 
 
     <view class="content">
-      <text>我要好好学习我要好好学习我要好好学习我要好好学习我要好好学习我要好好学习我要好好学习我要好好学习我要好好学习我要好好学习我要好好学习我要好好学习我要好好学习我要好好学习</text>
-      <image src="/images/v2_pq42gb.png"></image>
+      <view class="content-text">
+        <text>{{mainlist.content}}</text>
+      </view>
+      <image wx:for="{{mainlist.images}}" src="{{item}}"></image>
+    </view>
+    <view>
+      
     </view>
   </view>
 
-  <view class="container">
-    <view class="comment">
+  <view class="container" wx:for="{{datalist}}" wx:key="index">
+    <view class="comment" >
       <view class="partone">
-        <van-image round width="2.5rem" height="2.5rem" src="/images/v2_ppr4fq.png"/>
+        <van-image round width="2.5rem" height="2.5rem" src="{{item.userimage}}"/>
       </view>
       <view class="parttwo">
         <view class="comment-name">
-          <text>吴彦祖</text>
+          <text>{{item.username}}</text>
         </view>
         <view class="comment-content"> 
-          <text>你说得对你说得对你说得对你说得对你说得对你说得对你说得对你说得对你说得对你说得对你说得对你说得对你说得对</text>
+          <text>{{item.commentcontent}}</text>
         </view>
         <view class="comment-other">
           <view>
-            <text class="comment-date">2020-12-21</text>
+            <text class="comment-date">{{item.commentdate}}</text>
           </view>
-          <view>
-            <van-icon name="good-job-o" info="87"/>
-          </view> 
+          <!-- <view class="dianzan">
+            <image src="/images/good.png"></image>
+            <text>87</text>
+          </view>  -->
         </view>
       </view>
     </view>
   </view>
+  <form bindsubmit="BtnSubmit">
   <view class="mycomment">
     <view class="comment-box">
-      <input placeholder="添加评论"></input>
+      <input placeholder="添加评论" name="content"></input>
+    </view>
+    <view class="tap">
+      <button class="btn" form-type="submit" >提交</button>
+      <view class="clear">
+        <button  form-type="reset"> </button>
+      </view>
     </view>
   </view>
+  </form>
+
 </view>
 
 

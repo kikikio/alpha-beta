@@ -1,0 +1,24 @@
+image {
+  height: 400rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 750rpx;
+  z-index: -999;
+}
+.space {
+  height: 400rpx;
+  background-color: transparent;
+}
+.container1 {
+  height: 400rpx;
+  width: 100%;
+  background-color: black;
+  margin-top: 100rpx;
+}
+.container2 {
+  height: 400rpx;
+  width: 100%;
+  background-color: black;
+}

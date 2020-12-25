@@ -1,6 +1,10 @@
 .container1 {
   padding: 50rpx;
 }
-.container3 {
-  padding: 50rpx;
+.commit {
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;  /*水平*/
+  align-items: center; /*垂直*/
 }

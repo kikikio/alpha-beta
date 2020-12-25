@@ -1,56 +1,11 @@
-/**me.wxss**/
-
 page{
   width: 100%;
   height: 100%;
-  
 }
 
 .view_contain {
   width: 100%;
   height: 100%;
-}
-
-.view_1 {
-  width: 100%;
-  height: 17%;
-  background: #ffffff;
-}
-
-.view_1p5 {
-  width: 100%;
-  height: 1px;
-  background: #b8b5b5;
-}
-
-.view_2 {
-  width: 100%;
-  height: 55%;
-  background: #ffffff;
-}
-
-.view_3{
-  position: relative;
-  width: 100%;
-  height: 17.7%;
-}
-
-.view_3p5{
-  background: #b8b5b5;
-  position: relative;
-  width: 100%;
-  height: 1px;
-}
-.view_4{
-  width: 100%;
-  height: 10%;
-  background: #ffffff;
-}
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background: rgb(255, 255, 255);
 }
 
 .userinfo-avatar {
@@ -79,9 +34,74 @@ page{
   margin-top: 200px;
 }
 
-.anniu{
+.arrow{
   position: absolute;
-  left: 75%;
-  padding: 10px;
-  top: 4%;
+  left: 80%;
+  top: 21%;
+  width: 40px;
+  height: 40px;
+  color: #6d6b6b;
+  font-weight: 900;
+}
+
+.headBar{
+  width: 100%;
+  height: 35%;
+  background-image: url(https://goss.veer.com/creative/vcg/veer/800water/veer-161251290.jpg);
+  background-repeat: repeat;
+}
+
+.topBar{
+  position: relative;
+  width: 100%;
+  height: 2%;
+}
+/* 头像所在view框 */
+.userinfo {
+  position: relative;
+  display: flex;
+  left: 4%;
+  width: 90%;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  flex-direction: column;
+}
+.details {
+  position: relative;
+  left: 4%;
+  width: 90%;
+  height: 30%;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+}
+
+.body {
+  width: 100%;
+  height: 65%;
+  background: #ffffff;
+}
+
+.logOut {
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;  /*水平*/
+  align-items: center; /*垂直*/
+}
+
+/* 对字体样式进行定义 */
+.head-name{
+  font-weight: bold;
+  font-size: medium;
+  color: #3f3f3f;
+}
+.head-date{
+  font-size: small;
+  color: #cecece;
+}
+.content-title{
+  color: #ccbe97;
 }

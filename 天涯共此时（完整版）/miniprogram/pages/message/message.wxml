@@ -1,4 +1,4 @@
-<van-cell-group title="有人关注你，评论或者赞了你的动态，你将会收到推送">
+<van-cell-group  title="有人关注你，评论或者赞了你的动态，你将会收到推送">
   <van-cell title="评论与@"  >
      <van-switch  size="30rpx" checked="{{ checked }}" bind:change="onChange" />
   </van-cell>

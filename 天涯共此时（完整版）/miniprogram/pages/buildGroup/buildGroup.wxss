@@ -1,0 +1,27 @@
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30rpx;
+  height: 50rpx;
+}
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30rpx;
+  height: 50rpx;
+}
+.container {
+  margin-top: 200rpx;
+  width: 100%;
+  padding: 20rpx;
+  padding-right: 80%;
+}
+.buildGroup {
+  background-color: transparent;
+  height: 0rpx;
+  width: 100%;
+  margin-top: 350rpx;
+}
